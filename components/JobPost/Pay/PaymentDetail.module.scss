@@ -1,0 +1,51 @@
+.job_post_payment_detail_card {
+  background-color: #fff;
+  padding: 25px 20px;
+  min-height: 130px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  p {
+    font-size: 14px;
+    line-height: 22px;
+    margin: 0;
+    @media (max-width: 767px) {
+      font-size: 12px;
+    }
+    .grand_total {
+      font-size: 22px;
+      color: var(--dark-mint);
+      @media (max-width: 767px) {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.gurantee_card {
+  border-radius: 8px;
+  position: relative;
+  margin-top: 34px;
+  .gurantee_badge {
+    width: 58px;
+    position: absolute;
+    top: -22px;
+    right: 29px;
+  }
+  .gurantee_text {
+    h4 {
+      font-size: 35px;
+      line-height: 37px;
+      span {
+        font-size: 22px;
+        display: block;
+        margin: 6px 0;
+      }
+    }
+    p {
+      font-size: 16px;
+      line-height: 22px;
+      letter-spacing: -0.6px;
+    }
+  }
+}

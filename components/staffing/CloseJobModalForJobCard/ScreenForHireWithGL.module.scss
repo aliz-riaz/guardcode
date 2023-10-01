@@ -1,0 +1,31 @@
+.hire_employee_list {
+  max-height: 400px;
+  overflow-y: auto;
+}
+.hire_employee_card {
+  border: 1px solid #707070;
+  padding: 6px 12px;
+  border-radius: 7px;
+  width: 48%;
+  margin: 6px 0;
+  > div {
+    display: flex;
+    align-items: center;
+  }
+  img {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+  }
+  label {
+    span {
+      font-size: 16px;
+      font-weight: 500;
+    }
+    .checkmark {
+      top: -2px;
+      bottom: 0;
+      margin: auto;
+    }
+  }
+}

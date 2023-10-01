@@ -1,0 +1,63 @@
+.delete_confirm_modal {
+  padding: 1.5rem 1.5rem 1rem;
+  background: #fff;
+  max-width: 300px;
+  margin: 0 auto;
+  border-radius: 8px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  .img_wrap {
+    margin: 0 0 1.25rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 6px;
+  }
+  p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #a4a4a4;
+    margin-bottom: 0.5rem;
+  }
+  .button_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: #ff5e53;
+      border-radius: 5px;
+      font-size: 1rem;
+      font-weight: 700;
+      color: #fff;
+      outline: none;
+      margin-top: 10px;
+      padding: 0.75rem 1rem;
+      flex-shrink: 0;
+      flex: 1;
+      border: 1px solid #ff5e53;
+      transition: 0.3s ease-in-out;
+      &:hover {
+        background: darken($color: #ff5e53, $amount: 10);
+      }
+      &.cancel_btn {
+        border: 1px solid #5e5e5e;
+        border-radius: 5px;
+        flex: 0.5;
+        background: transparent;
+        color: #5e5e5e;
+        font-weight: 400;
+        &:hover {
+          background: darken($color: #5e5e5e, $amount: 10);
+          color: #fff;
+        }
+      }
+    }
+  }
+}

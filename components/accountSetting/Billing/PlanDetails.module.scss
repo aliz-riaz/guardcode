@@ -1,0 +1,32 @@
+.plan_details {
+  //   margin: 1rem 0;
+  .card {
+    background: #ffffff;
+    border-radius: 10px;
+  }
+  .change_plan_btn {
+    border: 1px solid #3bd55a;
+    border-radius: 5px;
+    background: #3bd55a;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    display: inline-block;
+    padding: 0.6rem;
+    outline: none;
+    transition: 0.3s ease-in-out;
+    font-weight: 600;
+    color: #242429;
+    width: 100%;
+    max-width: 150px;
+    &:hover {
+      background: darken($color: #3bd55a, $amount: 10%);
+    }
+    @media (max-width: 767.98px) {
+      padding: 0.5rem 1rem;
+      font-size: 14px;
+      max-width: none;
+      width: fit-content;
+    }
+  }
+}

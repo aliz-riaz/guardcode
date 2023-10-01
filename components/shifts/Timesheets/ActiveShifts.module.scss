@@ -1,0 +1,198 @@
+.wrapper {
+    width: 686px;
+    height: calc(100% - 60px);
+    right: -720px;
+    top: 60px;
+    bottom: 0;
+    z-index: 9999;
+    transition: all ease-in-out 0.3s;
+
+    &.show {
+        right: 0;
+    }
+
+    .content_header {
+        padding: 1.25rem 1.5rem;
+
+        h4 {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #242429;
+
+            span {
+                &.active_badge {
+                    color: #9D84FF;
+                    font-size: 12px;
+                    font-weight: 500;
+                    padding: 3px 1rem;
+                    line-height: 1;
+                    background: #8465FF1A;
+                    border-radius: 35px;
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 5px;
+
+                    &::before {
+                        content: '';
+                        height: 6px;
+                        width: 6px;
+                        border-radius: 50%;
+                        display: inline-block;
+                        background-color: #9D84FF;
+                    }
+                }
+            }
+        }
+
+        .search_wrapper {
+            position: relative;
+            width: 100%;
+
+            input {
+                width: 100%;
+                height: 44px;
+                border: 1px solid #A4A4A4;
+                border-radius: 4px;
+                padding: 0.75rem;
+                outline: none;
+                box-shadow: none;
+                transition: 0.3s ease-in-out;
+
+                &:focus {
+                    box-shadow: 0 0 8px 0px #3bd55a;
+                    border-color: #3bd55a;
+                }
+            }
+
+            img {
+                position: absolute;
+                right: 0.75rem;
+                top: 0.75rem;
+            }
+        }
+    }
+
+    .scroll {
+        height: calc(100vh - 180px);
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .close_btn {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        width: 20px;
+        height: 20px;
+        outline: none;
+        background-color: #fff;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #242429;
+
+        img {
+            width: 10px;
+            height: 10px;
+        }
+    }
+
+    .checkbox_wrap {
+        padding: 10px;
+        height: 20px;
+        width: 20px;
+        margin-left: auto;
+        z-index: 1;
+        border-radius: 3px;
+
+        label {
+            >span {
+                border: 1px solid #A4A4A4;
+            }
+        }
+
+        input:checked~span {
+            background: #3BD55A;
+            border-color: #3BD55A;
+
+            &::after {
+                border-color: #164520;
+            }
+        }
+    }
+
+    .timesheet_table {
+        thead {
+            background: #F8F8F8;
+
+            tr {
+                th {
+                    padding: 0.75rem;
+                    font-size: 0.875rem;
+                    font-weight: 600;
+                    vertical-align: middle;
+
+                    &:first-child {
+                        width: 55px;
+                    }
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                td {
+                    font-weight: 400;
+                    color: #242429;
+                    font-size: 0.875rem;
+                    vertical-align: middle;
+
+                    .card {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+
+                        figure {
+                            margin: 0;
+
+                            >img {
+                                height: 42px;
+                                width: 42px;
+                                border-radius: 50%;
+                            }
+                        }
+
+                        .content {
+                            h3 {
+                                font-size: 0.875rem;
+                                margin: 0;
+                                color: #242429;
+                                font-weight: 400;
+                                line-height: 1.2;
+
+                                span {
+                                    font-size: 0.75rem;
+                                    display: block;
+                                    margin-bottom: 2px;
+                                }
+                            }
+
+                            p {
+                                font-size: 0.75rem;
+                                margin: 0;
+                                color: #535353;
+                                line-height: 1;
+                            }
+                        }
+                    }
+                }
+
+                &:nth-child(even) {
+                    background: #F8F8F8;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,182 @@
+.modal_wrap {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1.25rem;
+  margin: 0 auto;
+  .modal_header {
+    margin-bottom: 0.5rem;
+    button {
+      border: 0;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 14px;
+      font-weight: 500;
+      color: #242429;
+      background: transparent;
+      outline: none;
+    }
+  }
+  .alert_wrap {
+    background: rgba(255, 94, 83, 0.1);
+    border-radius: 4px;
+    min-height: 60px;
+    padding: 0.25rem 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    p {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1rem;
+      // font-size: clamp(14px, 1.5vw, 1rem);
+      margin: 0;
+      color: #ff5e53;
+      font-weight: 500;
+    }
+  }
+  .content {
+    padding: 1rem 0 0;
+    h3 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #000;
+      margin-bottom: 4px;
+    }
+    p {
+      font-size: 1rem;
+      font-weight: 400;
+      color: #303030;
+    }
+    h4 {
+      font-size: 1.125rem;
+      color: #242429;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+    .summary_content {
+      margin: 1rem 0;
+      background: #f8f8f8;
+      border: 1px solid #f0f0f0;
+      border-radius: 8px;
+      padding: 1rem 0;
+      h4 {
+        font-size: 1.125rem;
+        color: #242429;
+        margin: 0;
+        line-height: 1.4;
+        span {
+          font-weight: 400;
+        }
+      }
+
+      .card_change_btn {
+        border: 0;
+        background: transparent;
+        color: #3b86ff;
+        font-size: 0.875rem;
+        font-weight: 600;
+        padding: 0;
+        outline: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 1rem;
+        img {
+          border-radius: 4px;
+        }
+      }
+      h2 {
+        font-size: 1.75rem;
+        margin: 0;
+        font-weight: 700;
+        color: #242429;
+        &.vat_title {
+          font-size: 1.125rem;
+        }
+      }
+      h5 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #242429;
+        margin: 0;
+        &.vat_price {
+          font-size: 1.125rem;
+        }
+        span {
+          font-weight: 400;
+          font-size: 14px;
+          color: #a4a4a4;
+        }
+      }
+    }
+  }
+  .progress_wrap {
+    margin-bottom: 1rem;
+    h4 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #303030;
+      line-height: 1;
+      margin: 0;
+    }
+    p {
+      font-size: 14px;
+      font-weight: 500;
+      margin: 0;
+      &.danger {
+        color: #ff5e53;
+      }
+      span {
+        font-weight: 400;
+      }
+    }
+  }
+  .button_wrap {
+    display: flex;
+    align-items: center;
+    margin-top: 0.75rem;
+    justify-content: flex-end;
+    gap: 0.75rem;
+    button {
+      background: #47d6b5;
+      border-radius: 5px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      font-size: 1.125rem;
+      font-weight: 700;
+      color: #242429;
+      outline: none;
+      margin-top: 10px;
+      padding: 0.75rem 1rem;
+      background: #ffe500;
+      border: 1px solid #ffe500;
+      transition: 0.3s ease-in-out;
+      min-width: 200px;
+      @media (max-width: 767.98px) {
+        width: 100%;
+      }
+      &:hover {
+        background: darken($color: #ffe500, $amount: 10);
+      }
+      &:disabled {
+        cursor: not-allowed;
+        opacity: 0.6;
+      }
+      &.save_btn {
+        border: 1px solid #5e5e5e;
+        border-radius: 5px;
+        background: transparent;
+        color: #5e5e5e;
+        font-weight: 400;
+        &:hover {
+          background: #242429;
+          color: #fff;
+        }
+      }
+    }
+  }
+}

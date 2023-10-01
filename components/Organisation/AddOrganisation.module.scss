@@ -1,0 +1,85 @@
+.create_organisation_modal {
+  > div {
+    border-radius: 12px;
+    @media (min-width: 767px) {
+      max-width: 736px;
+    }
+    min-height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: auto;
+    > div {
+      border-radius: 1rem;
+    }
+  }
+}
+
+.organisation_modal {
+  > div {
+    border-radius: 12px;
+
+    @media (min-width: 767px) {
+      max-width: 736px;
+    }
+
+    min-height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: auto;
+
+    > div {
+      border-radius: 1rem;
+    }
+  }
+
+  .organisation_body {
+    .close {
+      top: 0;
+      right: 0;
+
+      img {
+        max-width: 15px;
+      }
+    }
+
+    .organisation_box {
+      padding: 15px 10px;
+      width: 156px;
+      height: 156px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin: 0 10px;
+
+      img {
+        max-height: 60px;
+        margin-top: auto;
+      }
+
+      > span {
+        font-size: 14px;
+        line-height: 11px;
+        color: #242429;
+        margin-top: auto;
+      }
+    }
+
+    input {
+      &.disabled {
+        background: #edeaea;
+        box-shadow: none;
+        color: #979797;
+        border-color: #cfcfcf;
+        cursor: not-allowed;
+      }
+    }
+
+    .custom_dropdown {
+      max-height: 180px;
+    }
+  }
+}

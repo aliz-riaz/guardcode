@@ -1,0 +1,112 @@
+.channel_list_header {
+  height: 77px;
+  padding: 0px 36px;
+  border-bottom: 1px solid #e5e5e5;
+  position: relative;
+  .search {
+    position: absolute;
+    width: 90%;
+    right: 5%;
+    .remove {
+      position: absolute;
+      top: -12px;
+      right: 40px;
+      cursor: pointer;
+      z-index: 2;
+    }
+    input[type="text"] {
+      border: 0px solid #000;
+      color: #fff;
+      width: 67px;
+      height: 38px;
+      padding: 2px 18px 2px;
+      border-radius: 8px;
+      margin: 0px 0px;
+      position: absolute;
+      right: 0;
+      top: -19px;
+      z-index: 1;
+      background: linear-gradient(
+        to right,
+        #ffffff 0%,
+        #ffffff 50%,
+        rgba(0, 0, 0, 0) 50%,
+        rgba(0, 0, 0, 0) 100%
+      );
+    }
+
+    input[type="text"]:focus {
+      outline: none;
+      width: 100%;
+      color: #000;
+      border: 1px solid #000;
+      padding-right: 35px;
+      z-index: 1;
+      // @media (max-width:767px) {
+      //   width: 113%;
+      // }
+    }
+    input[type="text"]:focus + .search_icon {
+      display: block;
+    }
+    input[type="text"]:focus + .search_icon {
+    }
+
+    input[type="text"] {
+      -webkit-transition: all 0.3s ease 0s;
+      -moz-transition: all 0.3s ease 0s;
+      -o-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s;
+    }
+    &:after {
+      content: "";
+      display: block;
+      background: url(../../public/images/zoom.png) no-repeat;
+      width: 22px;
+      height: 22px;
+      top: -11px;
+      right: 10px;
+      position: absolute;
+      background-size: 22px;
+    }
+    .search_icon {
+      display: none;
+      position: absolute;
+      z-index: 2;
+      right: 10px;
+      top: -11px;
+    }
+    &.focus_in {
+      input[type="text"] {
+        outline: none;
+        width: 100%;
+        color: #000;
+        border: 1px solid #000;
+        padding-right: 35px;
+        z-index: 1;
+      }
+    }
+  }
+  .dropdown_list {
+    position: relative;
+    left: 8px;
+    .dropdownBtn {
+      button {
+        background-color: transparent;
+        &:focus {
+          border: 0;
+          box-shadow: none;
+          outline: none;
+        }
+        &:active {
+          border: 0 !important;
+          background: transparent;
+        }
+      }
+    }
+    .dropdown_menu {
+      left: auto !important;
+      right: 0 !important;
+    }
+  }
+}

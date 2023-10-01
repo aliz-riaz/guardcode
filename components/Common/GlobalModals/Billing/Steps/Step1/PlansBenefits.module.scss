@@ -1,0 +1,18 @@
+.plans_benefits {
+  padding-bottom: 0.5rem;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: disc;
+    padding-left: 1rem;
+    li {
+      flex: 0 0 33%;
+      @media (max-width: 991px) {
+        flex: 0 0 50%;
+      }
+      @media (max-width: 767px) {
+        flex: 0 0 100%;
+      }
+    }
+  }
+}

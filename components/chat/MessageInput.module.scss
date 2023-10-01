@@ -1,0 +1,209 @@
+.message_fields {
+  // display: flex;
+  min-height: 65px;
+  padding: 15px 24px;
+  border-top: 1px solid #e6e5e5;
+  position: absolute;
+  width: 100%;
+  bottom: -87px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background: #f7f7f7;
+  // max-height: 150px;
+  @media (max-width: 767px) {
+    padding-right: 26px;
+  }
+  .selected_files {
+    min-width: 386px;
+    max-width: 386px;
+    margin-bottom: 15px;
+    position: relative;
+    @media (max-width: 767px) {
+      min-width: 100%;
+      max-width: 100%;
+    }
+    .close {
+      width: 27px;
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      cursor: pointer;
+    }
+    .img_preview_thumbnail {
+      background-color: #f2f2f2;
+      border-radius: 8px;
+      padding: 9px 11px;
+
+      > div {
+        width: 50px !important;
+        height: 50px !important;
+        padding: 4px !important;
+        flex-shrink: 0;
+      }
+      img {
+        width: 100% !important;
+        height: 100% !important;
+      }
+      object {
+        height: 100% !important;
+        overflow: hidden;
+      }
+      > span {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+    .file_preview_thumbnail {
+      background-color: #f2f2f2;
+      border-radius: 8px;
+      padding: 9px 11px;
+    }
+  }
+  .textArea {
+    @media (max-width: 767px) {
+      width: 100%;
+      margin-right: 13px;
+    }
+    textarea {
+      margin-top: 10px;
+      border: 0;
+      appearance: none;
+      -webkit-appearance: none;
+      resize: none;
+      height: 38px !important;
+      font-size: 14px;
+      @media (max-width: 767px) {
+      }
+      &:focus {
+        box-shadow: none;
+      }
+      &::placeholder {
+        color: #cfcfcf;
+        font-size: 14px;
+      }
+    }
+
+    .editable_textarea {
+      max-height: 120px;
+      position: relative;
+      z-index: 1;
+      min-height: 20px;
+      // max-height: 100px;
+      // overflow-x: hidden;
+      // overflow-y: auto;
+      font-size: 15px;
+      font-weight: 400;
+      word-wrap: break-word;
+      white-space: pre-wrap;
+      outline: none;
+      user-select: text;
+    }
+    .editable_textarea[placeholder]:empty:before {
+      content: attr(placeholder);
+      color: #555;
+    }
+    .editable_textarea[placeholder]:empty:focus:before {
+      content: "";
+    }
+  }
+  .sendButton {
+    width: 37px;
+    margin-left: 10px;
+    @media (max-width: 767px) {
+      margin-left: 0px;
+    }
+    button {
+      border: 0;
+      background-color: transparent;
+      outline: none;
+      margin: 0 0 3px;
+      &:focus {
+      }
+    }
+  }
+  .add_files {
+    top: -5px;
+    margin-top: -5px;
+    position: relative;
+    width: 32px;
+    // overflow: hidden;
+    padding: 0 0px 0 10px;
+    label {
+      display: inline-block;
+      cursor: pointer;
+      border-radius: 50%;
+      width: 32px;
+      height: 32px;
+      -webkit-transition: all ease-in-out 0.2s;
+      -moz-transition: all ease-in-out 0.2s;
+      transition: all ease-in-out 0.2s;
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.08);
+      }
+    }
+
+    &:before {
+      content: "";
+      display: block;
+      width: 1px;
+      height: 22px;
+      background: #0000002b;
+      position: absolute;
+      left: 0;
+      bottom: 4px;
+    }
+  }
+  .uploading_file_badge {
+    border-radius: 42px;
+    background-color: var(--background-grey);
+    width: 175px;
+    height: 34px;
+    font-size: 14px;
+    padding: 7px 0;
+    top: -70px;
+    left: 0;
+    right: 0;
+  }
+}
+
+.fileinputs {
+  position: relative;
+  cursor: pointer;
+}
+
+.fakefile {
+  position: absolute;
+  bottom: 0px;
+  left: 20px;
+  z-index: 1;
+  bottom: 4px;
+  // width: 22px;
+  // height: 20px;
+}
+
+input.file {
+  position: relative;
+  text-align: right;
+  //filter:alpha(opacity: 0);
+  opacity: 0;
+  z-index: 2;
+  width: 22px;
+  height: 20px;
+  cursor: pointer;
+  margin-bottom: 8px;
+  margin-left: 4px;
+  @media (max-width: 767px) {
+    margin-bottom: 4px;
+    width: 46px;
+  }
+}
+
+.editable_textarea[placeholder]:empty:before {
+  content: attr(placeholder);
+  color: #555;
+}
+
+.editable_textarea[placeholder]:empty:focus:before {
+  content: "";
+}

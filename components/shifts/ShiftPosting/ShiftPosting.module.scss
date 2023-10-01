@@ -1,0 +1,31 @@
+// .main_wrapper {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   margin-top: 1.7rem;
+//   position: relative;
+//   @media (max-width: 767px) {
+//     margin-top: 2.5rem;
+//   }
+
+//   .wrapper {
+//     width: 100%;
+//     margin: 0 auto;
+//     max-width: 1320px;
+//     border-radius: 1rem;
+//   }
+// }
+
+.sP_inputs{
+    padding: 10px;
+    border: 2px solid #a4a4a4;
+    border-radius: 4px;
+    color: #5e5e5e;
+}
+
+.add_shift_btn {
+  color: #115dfc;
+  font-weight: 500;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+}

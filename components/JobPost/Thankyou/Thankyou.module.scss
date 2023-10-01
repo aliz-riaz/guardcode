@@ -1,0 +1,137 @@
+.gurantee_card {
+  border-radius: 8px;
+  position: relative;
+  margin-top: 34px;
+  .gurantee_badge {
+    width: 58px;
+    position: absolute;
+    top: -22px;
+    right: 29px;
+  }
+  .gurantee_text {
+    h4 {
+      font-size: 35px;
+      line-height: 37px;
+      span {
+        font-size: 22px;
+        display: block;
+        margin: 6px 0;
+      }
+    }
+    p {
+      font-size: 16px;
+      line-height: 22px;
+      letter-spacing: -0.6px;
+    }
+  }
+}
+
+.list_msg {
+  li:before {
+    background-color: #000000;
+  }
+}
+.matching_applicants {
+  position: fixed;
+  top: 60px;
+  right: 0;
+  bottom: 0;
+  height: calc(100% - 60px);
+  width: 550px;
+  @media (max-width: 1366px) {
+    width: 500px;
+  }
+  @media (max-width: 767px) {
+    width: 100%;
+    margin-top: 1.25rem;
+    position: unset;
+    padding: 1rem !important;
+  }
+  .applicants {
+    overflow-y: auto;
+    max-height: calc(100vh - 200px);
+    @media (max-width: 767px) {
+      max-height: none;
+    }
+    .applicant {
+      background: #f4f4f4;
+      padding: 20px 20px;
+      @media (max-width: 767px) {
+        padding: 0.75rem;
+        align-items: flex-start !important;
+      }
+      .avatar {
+        width: 90px;
+        height: 90px;
+        background-color: rgb(186, 191, 191);
+        @media (max-width: 767px) {
+          width: 60px;
+          height: 60px;
+        }
+      }
+      .right_cont {
+        .info {
+          h5 {
+            font-size: 16px;
+          }
+          p {
+          }
+        }
+        .video_btn {
+          width: 150px;
+          text-align: right;
+          > span {
+            background: #da0000;
+            .play {
+              background: #da0000;
+              width: 30px;
+              height: 30px;
+              top: -3px;
+              align-items: center;
+            }
+          }
+        }
+        ul {
+          @media (max-width: 767px) {
+            margin: 0;
+          }
+          li {
+            .card {
+              display: flex;
+              -moz-box-align: center;
+              align-items: center;
+              grid-gap: 2px;
+              gap: 2px;
+              padding: 0em 0.5rem;
+              background: #d9d9d9;
+              i img {
+                width: 1.25rem;
+              }
+              span {
+                font-size: 0.875rem;
+                font-weight: 600;
+                color: var(--black);
+                @media (max-width: 767px) {
+                  font-size: 12px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.new_round_arrow {
+  top: 70px;
+  right: -96px;
+  z-index: 10;
+  @media (max-width: 1366px) {
+    right: -70px;
+    max-width: 100px;
+  }
+  @media (max-width: 767px) {
+    display: none;
+  }
+}

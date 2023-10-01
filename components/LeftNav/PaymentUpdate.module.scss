@@ -1,0 +1,49 @@
+.card {
+  padding: 0 0.75rem 1rem;
+  background: rgba(164, 164, 164, 0.1);
+  border-radius: 4px;
+  margin: auto 1rem 0rem;
+  animation: fadeIn 3s;
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  img {
+    margin-top: -2.5rem;
+    margin-left: -0.5rem;
+    @media (max-width: 1440px) {
+      max-width: 70px;
+    }
+  }
+  p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    @media (max-width: 1440px) {
+      font-size: 13px;
+    }
+  }
+  button {
+    width: 100%;
+    background: #ffe500;
+    border-radius: 6px;
+    padding: 0.65rem 1rem;
+    text-align: center;
+    border: 1px solid #ffe500;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #242429;
+    @media (max-width: 1440px) {
+      font-size: 0.875rem;
+      padding: 0.5rem 1rem;
+    }
+    &:hover {
+      background: darken($color: #ffe500, $amount: 10);
+    }
+  }
+}

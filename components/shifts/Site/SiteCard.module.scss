@@ -1,0 +1,67 @@
+.SiteCard {
+  .more_dropdown {
+    .more_btn {
+      border: 0;
+      padding: 4px 10px 6px !important;
+      &:after {
+        display: none;
+      }
+      &:focus,
+      &:hover {
+        box-shadow: none !important;
+      }
+      + div {
+        min-width: 6rem;
+        right: -13px;
+        left: auto !important;
+        margin-top: -2px;
+      }
+    }
+
+    ul {
+      li {
+        &:hover {
+          background-color: #f0f0f0;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .licensedNames {
+    ul {
+      li {
+        background-color: #f0f0f0;
+        margin-right: 8px;
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
+.deleteModal {
+  .modal_header {
+    align-items: center !important;
+    .title {
+      font-size: 18px;
+    }
+    button {
+      background-color: transparent;
+      border: 0;
+      position: relative;
+      top: 2px;
+      &::before {
+        content: "\00D7";
+        display: block;
+        font-weight: 500;
+        color: rgba(0, 0, 0, 0.6);
+        font-size: 28px;
+        line-height: 28px;
+        &:focus {
+          box-shadow: none;
+          outline: none;
+        }
+      }
+    }
+  }
+}

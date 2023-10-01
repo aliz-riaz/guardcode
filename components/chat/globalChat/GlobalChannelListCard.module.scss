@@ -1,0 +1,50 @@
+.global_channel_list_card {
+  padding: 10px 12px;
+  transition: all 0.2s ease-in-out;
+  .avatar {
+    width: 48px;
+    height: 48px;
+    overflow: hidden;
+  }
+  .card_content {
+    .name {
+      font-size: 15px;
+      transform: translateY(1px);
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 110px;
+      margin-top: 3px;
+    }
+    .time {
+      font-size: 13px;
+      position: absolute;
+      right: 12px;
+      top: 12px;
+    }
+    .latest_message {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 1;
+      overflow: hidden;
+      margin-top: 2px;
+      width: 160px;
+      &.unread_message {
+        color: #666 !important;
+        font-weight: 600;
+      }
+    }
+  }
+  &:hover {
+    background-color: rgb(233, 232, 232);
+  }
+  .unread_status {
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #f5a248;
+  }
+}

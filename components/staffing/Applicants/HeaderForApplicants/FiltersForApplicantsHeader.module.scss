@@ -1,0 +1,83 @@
+.jobs_filter {
+  position: relative;
+
+  .sort_by_date {
+    width: 43px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.27px;
+    font-size: 14px;
+    font-weight: bold;
+    background: transparent;
+    border: 0;
+    color: var(--notification-background-blue);
+    text-align: center;
+    padding: 5px 0;
+    img {
+      margin: 0 auto;
+    }
+  }
+  .gl_input_simple {
+    width: 25%;
+    @media (max-width: 767px) {
+      width: 49%;
+    }
+  }
+  .jobs_filter_right {
+    width: 55%;
+    @media (max-width: 767px) {
+      width: 82%;
+    }
+    .search_bar {
+      width: 100%;
+      form {
+        min-width: 100%;
+      }
+    }
+  }
+}
+.search_bar {
+  // margin-left: auto;
+
+  form {
+    display: flex;
+    border: solid 1px var(--brown-grey);
+    border-radius: 4px;
+    min-width: 298px;
+  }
+  input {
+    border: 0;
+    height: 36px;
+    &:focus {
+      box-shadow: none;
+      // border: solid 1px var(--dark-mint);
+    }
+  }
+  input::-webkit-input-placeholder {
+    font-size: 14px;
+  }
+
+  input:-ms-input-placeholder {
+    font-size: 14px;
+  }
+
+  input::-ms-input-placeholder {
+    font-size: 14px;
+  }
+
+  input::-moz-placeholder {
+    font-size: 14px;
+  }
+
+  input::placeholder {
+    font-size: 14px;
+  }
+  button {
+    background: transparent;
+    border: 0;
+    &:focus {
+      border: 0;
+      outline: none;
+    }
+  }
+}

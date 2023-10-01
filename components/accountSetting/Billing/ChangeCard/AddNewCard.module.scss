@@ -1,0 +1,191 @@
+.add_new_card {
+  margin-top: 1rem;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+
+  h2 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #242429;
+    line-height: 1.4;
+    span {
+      display: block;
+      font-weight: 400;
+      color: #a4a4a4;
+    }
+  }
+  .card {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    // background: url("/images/cards-list.png") 96% 6% / auto no-repeat;
+    border: 1px solid #f0f0f0;
+    border-radius: 12px;
+    padding: 1.75rem;
+    .card_img {
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
+      @media (max-width: 575.98px) {
+        top: 0.5rem;
+      }
+    }
+    @media (max-width: 575.98px) {
+      padding: 3rem 1rem 2rem;
+      // background: url("/images/cards-list.png") 96% 1% / auto no-repeat;
+    }
+
+    .input_field {
+      margin-bottom: 1rem;
+      label {
+        display: block;
+        color: #242429;
+        font-weight: 500;
+        font-size: 1.125rem;
+        margin-bottom: 6px;
+        @media (max-width: 575.98px) {
+          font-size: 14px;
+        }
+      }
+      .card_wrap {
+        border-radius: 8px;
+        height: 54px;
+        width: 100%;
+        padding: 12px 1rem;
+        display: flex;
+        align-items: center;
+        background: #fff;
+        border: 1px solid #cfcfcf;
+        &:nth-child(2) {
+          > div {
+            width: 100%;
+            padding: 0.5rem;
+            input {
+              font-size: 2rem !important;
+            }
+          }
+        }
+        // @media (max-width: 575.98px) {
+        //   height: 40px;
+        //   padding: 12px 10px;
+        // }
+      }
+      .input {
+        background: #ffffff;
+        border: 1px solid #cfcfcf;
+        border-radius: 8px;
+        height: 54px;
+        width: 100%;
+        padding: 12px 1rem;
+        background: #fff;
+        &:focus {
+          outline: none;
+        }
+        // @media (max-width: 575.98px) {
+        //   height: 40px;
+        //   padding: 12px 10px;
+        // }
+      }
+    }
+    .checkbox_wrap {
+      label {
+        color: #242429;
+        font-size: 1.125rem;
+        font-weight: 400;
+        display: inline-block;
+        cursor: pointer;
+        margin: 0;
+        @media (max-width: 575.98px) {
+          font-size: 14px;
+          margin: 0;
+        }
+      }
+      input[type="checkbox"] {
+        position: relative;
+        border: 0;
+        cursor: pointer;
+        line-height: 0;
+        margin: 0 0.6em 0 0;
+        outline: 0;
+        padding: 0 !important;
+        vertical-align: text-top;
+        height: 20px;
+        width: 20px;
+        background: #e5e5e5;
+        border-radius: 4px;
+        -webkit-appearance: none;
+        &:checked {
+          background-color: #3bd55a;
+          opacity: 1;
+          &::before {
+            opacity: 1;
+          }
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          right: 50%;
+          top: 50%;
+          width: 6px;
+          height: 14px;
+          border: solid #fff;
+          border-width: 0 2px 2px 0;
+          margin: -1px -1px 0 -1px;
+          transform: rotate(45deg) translate(-50%, -50%);
+          z-index: 2;
+          opacity: 0;
+        }
+        @media (max-width: 575.98px) {
+          height: 18px;
+          width: 18px;
+        }
+      }
+    }
+  }
+
+  .buttons_wrapper {
+    align-items: center;
+    p {
+      font-weight: 400;
+      font-size: 1rem;
+      color: #5e5e5e;
+      margin: 0;
+      @media (max-width: 767.98px) {
+        margin: 0.75rem 0;
+      }
+    }
+    .save_card {
+      background: #242429;
+      border-radius: 4px;
+      font-size: 1rem;
+      font-weight: 700;
+      color: #fff;
+      padding: 0.75rem 1rem;
+      width: 160px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      border: 2px solid #242429;
+      transition: 0.2s ease-in-out;
+      outline: none;
+
+      &:hover {
+        background: #fff;
+        color: #242429;
+        border-color: #242429;
+      }
+      &:disabled {
+        background: #f0f0f0;
+        border-radius: 5px;
+        border-color: #f0f0f0;
+        color: #a4a4a4;
+        cursor: not-allowed;
+      }
+      @media (max-width: 575.98px) {
+        width: 100%;
+        font-size: 14px;
+      }
+    }
+  }
+}

@@ -1,0 +1,117 @@
+.user_review {
+    position: relative;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px 0px #00000040;
+    margin: 4px;
+
+    .content {
+        p {
+            font-size: 1.125rem;
+            color: var(--black);
+            font-weight: 400;
+            margin: 0 0 2rem;
+            line-height: 1.25;
+            min-height: 285px;
+
+            @media (max-width: 767px) {
+                font-size: 1rem;
+                min-height: 225px;
+            }
+
+            button {
+                border: 0;
+                outline: none;
+                padding: 0;
+                text-decoration: underline;
+                color: #000;
+                font-weight: 500;
+                font-size: inherit;
+                background: transparent;
+                transition: 0.3s ease-in-out;
+                margin-left: 5px;
+
+                &:hover {
+                    color: #5e8bea;
+                }
+            }
+        }
+    }
+
+    .user_info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h3 {
+            font-size: 1.25rem !important;
+
+            span {
+                white-space: nowrap;
+                max-width: 190px;
+                overflow: hidden;
+                font-size: 14px;
+                text-overflow: ellipsis;
+            }
+
+            &.no_image {
+                min-height: 50px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                max-width: none;
+
+                span {
+                    max-width: none;
+                }
+            }
+        }
+
+        >img {
+            width: 70px;
+            height: 50px;
+            object-fit: scale-down;
+            object-position: bottom right;
+        }
+    }
+}
+
+.arrow_group {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    padding-right: 1rem;
+    margin-top: 1rem;
+
+    button {
+        height: 3.75rem;
+        width: 3.75rem;
+        display: inline-grid;
+        place-items: center;
+        border-radius: 50%;
+        background: #ffffff;
+        border: 0;
+        box-shadow: 0px 4px 8px 0px #00000040;
+        outline: none;
+
+        @media (max-width: 767px) {
+            height: 3rem;
+            width: 3rem;
+        }
+
+        img {
+            opacity: 0.5;
+            height: 20px;
+            object-fit: contain;
+        }
+
+        &.disabled {
+            opacity: 0.4;
+        }
+
+        &:hover {
+            box-shadow: 0px 4px 8px 0px #00000040;
+        }
+    }
+}

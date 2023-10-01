@@ -1,0 +1,161 @@
+.booking_table {
+  @media (max-width: 767px) {
+    margin-top: 1.75rem;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 767px) {
+      width: 100%;
+      overflow-x: auto;
+    }
+
+    li {
+      flex: 1;
+
+      span {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.1;
+        color: #545454;
+        display: inline-block;
+
+        @media (max-width: 767px) {
+          font-size: 12px;
+        }
+      }
+
+      &:first-child {
+        flex: 0.75;
+      }
+
+      &:nth-child(3) {
+        flex: 1.5;
+        text-align: center;
+      }
+
+      &:nth-child(4) {
+        flex: 0.75;
+      }
+
+      &:nth-child(5) {
+        flex: 1;
+      }
+    }
+
+    &.card {
+      margin-top: 10px;
+      background-color: var(--white);
+      box-shadow: 0px 4px 25px 10px rgba(0, 0, 0, 0.05);
+      border-radius: 14px;
+      padding: 1rem 1rem;
+      text-align: left;
+
+      @media (max-width: 767px) {
+        padding: 10px;
+      }
+
+      li {
+        p {
+          font-size: 1rem;
+          color: #545454;
+          letter-spacing: -0.04em;
+          line-height: 1;
+          white-space: nowrap;
+          margin: 0;
+
+          @media (max-width: 767px) {
+            font-size: 12px;
+            white-space: initial;
+          }
+        }
+
+        h3 {
+          font-size: 1.125rem;
+          font-weight: 600;
+          line-height: 1;
+          color: var(--black);
+          margin: 0;
+
+          @media (max-width: 767px) {
+            font-size: 12px;
+          }
+        }
+
+        &:last-child {
+          text-align: center;
+
+          button {
+            width: 100%;
+            border-radius: 0;
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--black);
+            border: 0;
+            white-space: nowrap;
+            padding: 0.35rem 0.75rem;
+
+            &.btn_green {
+              background: #61c554;
+            }
+
+            &.btn_danger {
+              background: #d20000;
+              color: var(--white);
+            }
+
+            &.btn_grey {
+              background: #d7d7d7;
+            }
+
+            @media (max-width: 767px) {
+              padding: 0.25em 0.5em;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .create_btn {
+    margin: 1rem auto;
+    display: block;
+    background: #1e1e1e;
+    box-shadow: 0px 4px 25px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 14px;
+    color: var(--white);
+    font-size: 1.125rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    border: 0;
+
+    img {
+      display: block;
+      margin: 0 auto 5px;
+
+      @media (max-width: 767px) {
+        max-width: 40px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      font-size: 1rem;
+      padding: 0.5rem;
+    }
+  }
+}
+
+.figure_wrap {
+  margin-right: -1.75rem;
+  margin-top: 2rem;
+  @media (max-width: 991px) {
+    margin: 0;
+  }
+}

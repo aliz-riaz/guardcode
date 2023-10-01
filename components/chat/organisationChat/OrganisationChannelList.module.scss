@@ -1,0 +1,28 @@
+.channel_list_main {
+  @media (max-width: 767px) {
+    padding: 0 0;
+  }
+}
+.channel_list {
+  margin: 0 0 0 -15px;
+  @media (max-width: 767px) {
+    margin: 0;
+  }
+}
+.ChannelListCard_wrap {
+  height: calc(100vh - 138px);
+  overflow: hidden;
+  overflow-y: auto;
+  > div > div {
+    overflow: unset !important;
+  }
+  &.with_filters {
+    height: calc(100vh - 211px);
+    @media (max-width: 767px) {
+      height: calc(100vh - 262px);
+      &.with_allChat {
+        height: calc(100vh - 205px);
+      }
+    }
+  }
+}

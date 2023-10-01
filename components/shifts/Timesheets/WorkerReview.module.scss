@@ -1,0 +1,204 @@
+.wrapper {
+    width: 686px;
+    height: calc(100% - 60px);
+    right: -720px;
+    top: 60px;
+    bottom: 0;
+    z-index: 9999;
+    overflow-y: auto;
+    transition: all ease-in-out 0.3s;
+
+    &.show {
+        right: 0;
+    }
+
+    .content_header {
+        padding: 1rem 1.25rem;
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        border-bottom: 1px solid #DADADA;
+
+        h4 {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #242429;
+        }
+
+        .back_btn {
+            border: 0;
+            background: transparent;
+            outline: none;
+            padding: 0;
+        }
+    }
+
+    .scroll {
+        height: calc(100vh - 200px);
+        overflow-y: auto;
+        overflow-x: hidden;
+
+        .card {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 1rem 1.5rem 1.25rem;
+
+            figure {
+                margin: 0;
+
+                >img {
+                    height: 5rem;
+                    width: 5rem;
+                    border-radius: 50%;
+                }
+            }
+
+            .content {
+                h3 {
+                    font-size: 1.25rem;
+                    margin: 0;
+                    color: #242429;
+                    font-weight: 400;
+                    line-height: 1.2;
+
+                    span {
+                        font-size: 1rem;
+                        display: block;
+                        margin: 2px 0;
+                    }
+                }
+
+                p {
+                    font-size: 1rem;
+                    margin: 0;
+                    color: #535353;
+                    line-height: 1;
+                }
+            }
+        }
+
+        ._site {
+            padding: 0.75rem 1.5rem;
+            border-top: 1px solid #DADADA;
+            border-bottom: 1px solid #DADADA;
+
+            p {
+                color: #000;
+                line-height: 1;
+            }
+        }
+
+        .rate_review {
+            padding: 2rem 0 0;
+
+            h3 {
+                font-size: 1.125rem;
+                font-weight: 500;
+                color: #000;
+                margin-bottom: 0.5rem;
+            }
+
+            span {
+                color: #000;
+                font-weight: 400;
+                font-size: 1.125rem;
+            }
+
+            .stars_wrapper {
+                display: flex;
+                gap: 5px;
+                align-items: center;
+                justify-content: center;
+
+                .star {
+                    cursor: pointer;
+                    color: #D8D8D8;
+                    font-size: 2.5rem;
+                    display: inline-block;
+                    transition: color 0.3s;
+
+                    &.filled {
+                        color: #FFB82E;
+                    }
+
+                    &:hover {
+                        color: #FFB82E;
+                    }
+                }
+            }
+        }
+
+        .comments_wrap {
+            padding: 1rem 1.5rem;
+
+            label {
+                display: block;
+                color: #242429;
+                font-weight: 600;
+                margin-bottom: 0rem;
+                font-size: 0.875rem;
+            }
+
+            textarea {
+                width: 100%;
+                border-radius: 4px;
+                height: 140px;
+                resize: none;
+                padding: 0.75rem;
+                font-size: 0.875rem;
+                font-weight: 400;
+                color: #242429;
+                outline: none;
+                border: 1px solid #A4A4A4;
+            }
+        }
+
+    }
+
+    .button_wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 1.5rem;
+        // position: absolute;
+        // bottom: 0;
+        // right: 0;
+        // left: 0;
+
+        button {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-weight: 700;
+            padding: 0.75rem 1.25rem;
+
+            &.back {
+                img {
+                    filter: invert(1) brightness(10);
+                }
+            }
+        }
+    }
+
+    .close_btn {
+        position: absolute;
+        top: 1.25rem;
+        right: 1rem;
+        width: 20px;
+        height: 20px;
+        outline: none;
+        background-color: #fff;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #242429;
+
+        img {
+            width: 10px;
+            height: 10px;
+        }
+    }
+}

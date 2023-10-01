@@ -1,0 +1,83 @@
+.policy_txt {
+  font-size: 14px;
+  a {
+    color: var(--action-green);
+    font-size: 14px;
+    &:hover {
+      color: var(--action-green);
+    }
+  }
+}
+
+.jobDescription {
+  // border-top: 1px solid #ccc;
+  // padding: 10px 0 0;
+  h1 {
+    font-size: 16px;
+  }
+  h2 {
+    font-size: 16px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+  ul {
+    list-style: disc;
+    padding: 0 0 0 15px;
+  }
+}
+
+.edit_preview {
+  position: relative;
+  border-top: solid 1px var(--background-grey);
+  // border-bottom: solid 1px var(--background-grey);
+  padding: 17px 0 13px;
+  padding-right: 44px;
+  @media (max-width: 767px) {
+    padding-right: 44px;
+  }
+  h4 {
+    font-size: 14px;
+    color: var(--notification-background-blue);
+  }
+  p {
+    font-size: 14px;
+    color: var(--notification-background-blue);
+  }
+  .edit {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    height: 24px;
+  }
+}
+
+.back_button {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  line-height: 1;
+  img {
+    max-width: 24px;
+  }
+}
+.preview_job {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  line-height: 1;
+  img {
+    max-width: 18px;
+    height: 24px;
+    object-fit: contain;
+    margin-bottom: 2px;
+  }
+  @media (max-width: 767.98px) {
+    width: 100%;
+    justify-content: center;
+    margin: 0.5rem 0;
+  }
+}

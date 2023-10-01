@@ -1,0 +1,27 @@
+// only for table which is making in reviewAndConfirmShiftCard.js file 
+.table > table {
+  > thead > tr > th {
+    font-weight: 600;
+    font-size: 14px;
+    padding-left: 0px;
+    padding-right: 0px;
+    vertical-align: top;
+    @media (max-width: 767px) {
+      font-size: 12px;
+      min-width: 75px;
+    }
+  }
+  > tbody > .shiftsDetail {
+    font-size: 14px;
+    color: #5c5c5c;
+  }
+  > tbody > tr > td {
+    padding-left: 0px;
+    vertical-align: top;
+    padding-right: 0px;
+    @media (max-width: 767px) {
+      font-size: 12px;
+      min-width: 75px;
+    }
+  }
+}

@@ -1,0 +1,131 @@
+.channel_header {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 0 25px;
+  @media (max-width: 767px) {
+    padding: 0 40px;
+  }
+  @media (max-width: 767px) {
+    height: 104px;
+  }
+  .emp_details {
+    padding: 20px 0 7px;
+    @media (max-width: 767px) {
+      padding: 15px 0 7px;
+    }
+    .emp_img {
+      width: 40px;
+      img {
+        height: 41px;
+        width: 100%;
+        overflow: hidden;
+        border-radius: 50%;
+      }
+    }
+    .emp_cont {
+      padding-left: 14px;
+      position: relative;
+      .job_names {
+        font-size: 14px;
+        font-weight: 500;
+        margin-top: -2px;
+        display: inline-block;
+        @media (max-width: 767px) {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          width: 200px;
+          display: block;
+        }
+      }
+      .more_jobs {
+        @media (max-width: 767px) {
+          margin-top: -12px;
+          padding-left: 0 !important;
+        }
+      }
+      h4 {
+        font-size: 16px;
+        font-weight: bold;
+        margin-top: 2px;
+        .profile_view {
+          transform: translateY(-2px);
+          margin-left: 6px;
+          // cursor: pointer;
+        }
+      }
+      .dropdownBtn {
+        > button {
+          color: #3bd55a;
+          font-size: 14px;
+          &:focus {
+            border: 0;
+            outline: 0;
+            box-shadow: none;
+          }
+        }
+        .more_jobs_dropdown {
+          width: 333px;
+          border-radius: 4px;
+          padding: 0px 18px;
+          box-shadow: 0 1px 6px 0 #e5e5e5;
+          background-color: #fff;
+          margin-top: 0px;
+          z-index: 3;
+          margin-right: -50px;
+          box-shadow: 0 1px 6px 0 rgba(83, 83, 83, 0.7);
+          left: auto !important;
+          right: 0;
+          border: 0;
+          max-height: 300px;
+          overflow-y: auto;
+          @media (max-width: 767px) {
+            left: -100% !important;
+            right: auto;
+            width: 283px;
+          }
+          ul {
+            li {
+              border-bottom: solid 1px var(--background-grey);
+              font-size: 14px;
+              padding: 14px 0 14px;
+              &:last-child {
+                border-bottom: 0;
+              }
+            }
+          }
+        }
+      }
+      .dropdown_emp_act {
+        top: 50%;
+        right: 0;
+        margin-top: -18px;
+
+        .dropdown_list {
+          left: auto !important;
+          right: 0;
+          margin-right: -70px;
+          border-radius: 4px;
+          padding: 0px 0px;
+          box-shadow: 0 1px 6px 0 #e5e5e5;
+          background-color: #fff;
+          margin-top: 6px;
+          min-width: 13rem;
+          ul {
+            li {
+              border-bottom: solid 1px #ccc;
+              font-size: 14px;
+              padding: 8px 12px 8px;
+              cursor: pointer;
+              &:hover {
+                background-color: #faf8f8;
+              }
+              &:last-child {
+                border-bottom: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

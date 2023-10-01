@@ -1,0 +1,277 @@
+.previewProfile_content_wrap {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 1001;
+  width: 0;
+
+  &.show {
+    width: 100%;
+  }
+
+  .previewProfile_content {
+    position: fixed;
+    width: 428px;
+    height: calc(100vh - 60px);
+    overflow: auto;
+    top: 60px;
+    background: #fff;
+    right: -428px;
+    box-shadow: -2px 0 7px 0 rgb(83 83 83 / 16%);
+    -webkit-transition: right 0.3s ease-in-out;
+    -moz-transition: right 0.3s ease-in-out;
+    transition: right 0.3s ease-in-out;
+    z-index: 1001;
+
+    @media (max-width: 767px) {
+      width: 100%;
+      top: 56px;
+      right: -100%;
+    }
+
+    &.show {
+      right: 0;
+    }
+
+    .close_preview {
+      position: absolute;
+      right: 7px;
+      top: 10px;
+      cursor: pointer;
+      z-index: 9;
+    }
+
+    .scroll {
+      max-height: calc(100vh - 200px);
+      overflow-y: auto;
+    }
+
+    span,
+    p {
+      transform: translateY(1px);
+    }
+  }
+}
+
+.profile_header {
+  .profile_img {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+    }
+
+    .verified_badge {
+      position: absolute;
+      width: 24px;
+      left: 54px;
+      right: 0;
+      top: 73px;
+      margin: 0 auto 0;
+    }
+  }
+
+  h4 {
+    font-size: 22px !important;
+  }
+
+  .location {
+    font-size: 14px;
+
+    span {
+      transform: translateY(1px);
+      font-size: 14px;
+    }
+  }
+}
+
+.profile_btn {
+  > button {
+    // width: 49%;
+  }
+}
+
+.prescreen_row {
+  padding: 14px 20px;
+  border-top: solid 1px var(--very-light-pink);
+  border-bottom: solid 1px var(--very-light-pink);
+}
+
+.preScreen_ready_container {
+  > div {
+    border: 0;
+
+    > div {
+      border: 0;
+    }
+
+    > span {
+      &:before {
+        border-bottom-color: var(--notification-background-blue) !important;
+        top: 1px !important;
+      }
+
+      &:after {
+        border-bottom-color: var(--notification-background-blue) !important;
+      }
+    }
+  }
+
+  .preScreen_ready_body {
+    background-color: var(--notification-background-blue);
+    border-radius: 8px;
+    border: 0;
+
+    .close {
+      position: absolute;
+      right: 9px;
+      top: 6px;
+      cursor: pointer;
+    }
+
+    p {
+      font-size: 14px;
+      font-weight: normal;
+      color: #fff;
+      font-weight: lighter;
+      margin-bottom: 0;
+    }
+
+    ul {
+      padding: 0;
+      list-style: none;
+
+      li {
+        position: relative;
+        font-size: 14px;
+        font-weight: bold;
+        padding: 12px 0 0 25px;
+        color: #fff;
+
+        > img {
+          position: absolute;
+          left: 0;
+          top: 16px;
+        }
+      }
+    }
+  }
+}
+
+.experience_card {
+  border-bottom: solid 1px var(--very-light-pink);
+  padding: 18px 30px;
+
+  ul {
+    margin-top: 15px;
+
+    li {
+      position: relative;
+      border-left: dashed 1px var(--very-light-pink);
+      padding-left: 30px;
+      line-height: normal;
+      padding-bottom: 20px;
+
+      p {
+        font-size: 14px;
+        font-weight: normal;
+      }
+
+      &:before {
+        content: "";
+        display: block;
+        width: 12px;
+        height: 12px;
+        background-color: var(--very-light-pink);
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        left: -6px;
+      }
+
+      &:last-child {
+        border-left: 0;
+      }
+    }
+  }
+}
+
+.videoModal {
+  > div {
+    -webkit-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    top: 16%;
+    margin: 0 auto;
+  }
+
+  .closeModal {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+  }
+
+  .react_player {
+    width: 100%;
+    margin-top: 30px;
+
+    video {
+      background-color: #000;
+    }
+  }
+}
+
+.gab_between {
+  gap: 1rem;
+
+  .badge_icon_for_profile {
+    background-color: rgb(229 229 229);
+    display: inline-flex;
+    border: 1px solid rgb(164 164 164);
+    border-radius: 45px;
+    padding: 4px 12px;
+    gap: 0.5rem;
+    align-items: center;
+
+    span {
+      font-size: 14px;
+    }
+  }
+}
+
+.badge_container {
+  display: flex;
+
+  .badge_col {
+    &:first-child {
+      padding-left: 0;
+    }
+
+    padding: 6px;
+  }
+}
+
+.profile_loader {
+  height: calc(100vh - 75px);
+}
+
+.tagging {
+  margin: 10px 10px 0;
+}
+.tagPopoverBox {
+  border: 0;
+  background: transparent;
+  // left: 27px !important;
+  right: 0 !important;
+  margin: 0px 0 0 !important;
+  max-width: 160px;
+  .tagName {
+    display: inline-block;
+  }
+}

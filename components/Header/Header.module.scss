@@ -1,0 +1,132 @@
+// .header_main {
+//   .nav_container {
+//     gap: 0 1rem !important;
+//     .nav_item {
+//       margin: 0 !important;
+//       .nav_link {
+//         color: var(--white) !important;
+//         font-size: 1.125rem;
+//         font-weight: 500;
+//         transition: 0.3s ease-in-out;
+//         padding: 8px !important;
+//         &:hover {
+//           color: #3bd55a !important;
+//         }
+//       }
+//     }
+//   }
+//   .sign_in_btn {
+//     min-width: 200px;
+//   }
+// }
+
+.header_container {
+  //   position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 11;
+  padding: 1rem 0;
+  background: #242429;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  @media (max-width: 575px) {
+    padding: 0;
+  }
+  .logo {
+    @media (max-width: 575px) {
+      max-width: 140px;
+    }
+  }
+  .toggle_icon {
+    // background: var(--white);
+    outline: none;
+    box-shadow: none;
+    span {
+      filter: invert(1) brightness(10);
+    }
+  }
+  .nav_container {
+    gap: 0 1rem;
+    @media only screen and (max-width: 1199px) and (min-width: 992px) {
+      gap: 0;
+    }
+    @media (max-width: 991px) {
+      padding: 2rem 0 0.5rem;
+    }
+    .nav_link {
+      color: #fff;
+      font-size: 1.125rem;
+      font-weight: 500;
+      &:hover {
+        color: #3bd55a;
+      }
+      &.active {
+        color: #3bd55a;
+      }
+      &:focus {
+        color: #3bd55a;
+      }
+      @media only screen and (max-width: 1199px) and (min-width: 992px) {
+        font-size: 14px;
+      }
+    }
+  }
+  .nav_button {
+    border: 1px solid #fff;
+    font-size: 1.125rem;
+    color: #fff;
+    padding: 0.5em 1.25rem !important;
+    font-weight: 500;
+    letter-spacing: -0.04em;
+    display: inline-block;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+    @media (max-width: 572px) {
+      margin-top: 1rem;
+      width: 100%;
+    }
+    &:hover {
+      color: #3bd55a;
+      border-color: #3bd55a;
+    }
+  }
+
+  .btn_link {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    outline: none;
+    padding: 0;
+
+    .user_avatar {
+      margin-right: 5px;
+      svg {
+        stroke: var(--white);
+      }
+      @media (max-width: 767px) {
+        margin-right: 0;
+      }
+    }
+    &:hover {
+      color: var(--action-green) !important;
+      transition: 0.3s;
+      color: var(--white);
+
+      svg {
+        stroke: var(--action-green);
+        transition: 0.3s;
+      }
+    }
+    .val_txt {
+      @media (max-width: 767px) {
+        display: none;
+      }
+    }
+  }
+  .sign_in_btn {
+    min-width: 200px;
+    @media only screen and (max-width: 1199px) and (min-width: 992px) {
+      min-width: auto;
+    }
+  }
+}

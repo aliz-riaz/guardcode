@@ -1,0 +1,98 @@
+.shift_list_card {
+  .icon_row {
+    padding: 12px 0px 12px 12px;
+  }
+  .shift_badge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 38px;
+    padding: 4px 10px;
+
+    .active_dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      /* Creates a rounded shape */
+      display: inline-block;
+      margin: 0 3px;
+      /* Adjust spacing as needed */
+    }
+
+    .shift_badge_text {
+      //   padding: 6px 0px;
+    }
+
+    &.active {
+      background: #8465ff1a;
+      color: #9d84ff;
+
+      .active_dot {
+        background: #9d84ff;
+      }
+    }
+
+    &.completed {
+      background: #66b4401f;
+      color: #66b440;
+
+      .active_dot {
+        background: #66b440;
+      }
+    }
+
+    &.incomplete {
+      background: #ff5e531a;
+      color: #ff5e53;
+
+      .active_dot {
+        background: #ff5e53;
+      }
+    }
+
+    &.declined {
+      background: #ff5e53;
+    }
+
+    &.published {
+      background: #0099ff;
+    }
+
+    &.closed {
+      background: #d8d8d8;
+    }
+
+    &.submitted {
+      background: #66b440;
+    }
+  }
+  .shift_title {
+    line-height: 16px;
+  }
+
+  .user_tag {
+    display: inline-block;
+    font-size: 12px;
+
+    @media (max-width: 767px) {
+      margin-left: 0;
+      font-size: 11px;
+      width: fit-content;
+      display: block;
+    }
+  }
+  .candidates_btn {
+    position: relative;
+    .active_dot_candidates {
+      position: absolute;
+      top: -6px;
+      right: -8px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      display: inline-block;
+      margin: 0 3px;
+      background-color: red;
+    }
+  }
+}

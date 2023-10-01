@@ -1,0 +1,89 @@
+.custom_plan {
+  background: #f8f8f8;
+  font-family: "Roboto", sans-serif;
+  border-radius: 9px;
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
+
+  h3 {
+    color: #000000;
+  }
+
+  p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.1;
+    color: #303030;
+    margin-bottom: 1rem;
+  }
+
+  .call_us_btn {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+    button {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 0.75rem 1.5rem;
+      justify-content: center;
+      border-radius: 6px;
+    }
+
+    h4 {
+      color: #303030;
+      font-size: 1.125rem;
+      font-weight: 400;
+      margin: 0;
+
+      a {
+        font-weight: 700;
+        color: #303030;
+        font-size: 1rem;
+
+        @media (max-width: 767.98px) {
+          display: block;
+          font-size: 1.125rem;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-left: 0;
+    margin: 0;
+    text-align: center;
+    list-style: none;
+
+    @media (max-width: 767.98px) {
+      justify-content: flex-start;
+    }
+
+    li {
+      margin-right: -1rem;
+      position: relative;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      img {
+        border-radius: 50%;
+        border: 2px solid #fff;
+      }
+
+      span {
+        color: #303030;
+        font-size: 0.875rem;
+        font-weight: 400;
+        display: block;
+      }
+    }
+  }
+}

@@ -1,0 +1,323 @@
+.message_fields {
+  // min-height: 75px;
+  border-top: 1px solid #e6e5e5;
+  background-color: #fff;
+  // position: absolute;
+  width: 100%;
+  bottom: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  max-height: 150px;
+
+  @media (max-width: 767px) {
+    padding-right: 56px;
+  }
+
+  .selected_files {
+    min-width: 90%;
+    max-width: 90%;
+    margin: 10px 10px 0px;
+    position: relative;
+
+    @media (max-width: 767px) {
+      min-width: 100%;
+      max-width: 100%;
+    }
+
+    .file_name {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    .close {
+      width: 27px;
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      cursor: pointer;
+    }
+
+    .img_preview_thumbnail {
+      background-color: #f2f2f2;
+      border-radius: 8px;
+      padding: 9px 11px;
+
+      > div {
+        width: 50px !important;
+        height: 50px !important;
+        padding: 4px !important;
+        flex-shrink: 0;
+      }
+
+      img {
+        width: 100% !important;
+        height: 100% !important;
+      }
+
+      object {
+        height: 100% !important;
+        overflow: hidden;
+      }
+
+      > span {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+
+    .file_preview_thumbnail {
+      background-color: #f2f2f2;
+      border-radius: 8px;
+      padding: 9px 11px;
+    }
+  }
+
+  .textArea {
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+
+    textarea {
+      margin-top: 10px;
+      border: 0;
+      appearance: none;
+      -webkit-appearance: none;
+      resize: none;
+      height: 38px !important;
+      font-size: 14px;
+
+      @media (max-width: 767px) {
+      }
+
+      &:focus {
+        box-shadow: none;
+      }
+
+      &::placeholder {
+        color: #cfcfcf;
+        font-size: 14px;
+      }
+    }
+
+    .editable_textarea {
+      // max-height: 120px;
+      position: relative;
+      z-index: 1;
+      min-height: 40px;
+      background-color: #f3f2ef;
+      border-radius: 0.8rem;
+      padding: 10px 10px;
+      font-size: 15px;
+      font-weight: 400;
+      word-wrap: break-word;
+      white-space: pre-wrap;
+      outline: none;
+      user-select: text;
+      // overflow: hidden;
+    }
+
+    .editable_textarea[placeholder]:empty:before {
+      content: attr(placeholder);
+      color: #555;
+    }
+
+    .editable_textarea[placeholder]:empty:focus:before {
+      content: "";
+    }
+  }
+
+  .sendButton {
+    width: 37px;
+    top: -4px;
+    position: relative;
+
+    @media (max-width: 767px) {
+      margin-left: 0px;
+    }
+
+    button {
+      border: 0;
+      background-color: transparent;
+      outline: none;
+      margin: 0 0 3px;
+
+      &:focus {
+      }
+    }
+
+    // .add_temp_btn {
+    //   background: transparent;
+    //   border: 0;
+    //   padding: 0;
+    //   outline: none;
+
+    //   img {
+    //     transition: 0.3s ease-in-out;
+    //     width: 30px;
+    //   }
+
+    //   &:hover {
+    //     img {
+    //       transform: rotate(180deg);
+    //     }
+    //   }
+    // }
+  }
+
+  .add_files {
+    top: -5px;
+    margin-top: -5px;
+    position: relative;
+    width: 32px;
+    overflow: hidden;
+
+    @media (max-width: 767px) {
+      padding: 0 10px;
+      position: absolute;
+      right: 14px;
+      bottom: 17px;
+      width: 46px;
+      overflow: hidden;
+      padding: 1px 0;
+    }
+
+    label {
+      display: inline-block;
+      cursor: pointer;
+      border-radius: 50%;
+      width: 32px;
+      height: 32px;
+      transition: all ease-in-out 0.2s;
+
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.08);
+      }
+    }
+
+    .fakefile {
+      position: absolute;
+      bottom: 0px;
+      left: 0;
+      right: 0;
+      top: 0;
+      z-index: 1;
+      bottom: 0px;
+      width: 22px;
+      height: 20px;
+    }
+
+    .document_btn {
+      background-color: transparent;
+      border: 0;
+
+      &:focus {
+        background-color: transparent;
+        box-shadow: none;
+        outline: none;
+      }
+    }
+  }
+
+  .uploading_file_badge {
+    border-radius: 42px;
+    background-color: var(--background-grey);
+    width: 175px;
+    height: 34px;
+    font-size: 14px;
+    padding: 7px 0;
+    top: -70px;
+    left: 0;
+    right: 0;
+  }
+
+  .chat_footer_actions {
+    border-top: 1px solid #e6e5e5;
+    padding: 5px 0;
+  }
+}
+
+.fileinputs {
+  position: relative;
+  cursor: pointer;
+}
+
+input.file {
+  position: relative;
+  text-align: right;
+  //filter:alpha(opacity: 0);
+  opacity: 0;
+  z-index: 2;
+  width: 22px;
+  height: 20px;
+  cursor: pointer;
+  margin-bottom: 8px;
+  margin-left: 4px;
+
+  @media (max-width: 767px) {
+    margin-bottom: 4px;
+    width: 46px;
+  }
+}
+
+.editable_textarea[placeholder]:empty:before {
+  content: attr(placeholder);
+  color: #555;
+}
+
+.editable_textarea[placeholder]:empty:focus:before {
+  content: "";
+}
+
+.chat_field_wrap {
+  position: relative;
+
+  .template_box {
+    position: absolute;
+    bottom: 40px;
+    right: 0px;
+    width: 100%;
+    border-radius: 6px;
+    z-index: 1;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 10px;
+      right: 12px;
+      width: 20px;
+      height: 20px;
+      z-index: -1;
+      transform: rotate(45deg);
+      background: #f1f0ed;
+    }
+    > div {
+      ul {
+        max-height: 220px;
+      }
+    }
+  }
+
+  .add_temp_btn {
+    position: absolute;
+    right: 6px;
+    bottom: 6px;
+    z-index: 1;
+    background: transparent;
+    border: 0;
+    padding: 0;
+    outline: none;
+
+    img {
+      transition: 0.3s ease-in-out;
+      width: 30px;
+    }
+
+    &:hover {
+      img {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}

@@ -1,0 +1,91 @@
+.card_details {
+  background: #f8f8f8;
+  padding: 1.25rem;
+  border-radius: 0 10px 10px 0;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  &.loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .change_plan_btn {
+    border: 0;
+    padding: 0;
+    background: transparent;
+    color: #3b86ff;
+    font-weight: 600;
+    font-size: 1rem;
+    outline: none;
+  }
+  .visa_card {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    p {
+      line-height: 1.2;
+      font-weight: 500;
+      font-size: 14px;
+      color: #303030;
+      span {
+        font-weight: 400;
+      }
+    }
+  }
+  .user_mail {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 1rem 0 0.25rem;
+    p {
+      margin: 0;
+      font-size: 1rem;
+      color: #242429;
+      font-weight: 400;
+      line-height: 1;
+    }
+  }
+  > p {
+    color: #a4a4a4;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0 0 0.5rem;
+  }
+  .purchase_txt {
+    color: #a4a4a4;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0 0 0.5rem;
+  }
+  .card_payment {
+    padding: 0.75rem 0 0;
+    border-top: 1px solid #d8d8d8;
+    h4 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #242429;
+      font-size: 1rem;
+      font-weight: 600;
+
+      span {
+        font-weight: 400;
+        color: #5e5e5e;
+      }
+    }
+    p {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      color: #a4a4a4;
+      margin: 0;
+    }
+  }
+  .reveal_btn {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+}

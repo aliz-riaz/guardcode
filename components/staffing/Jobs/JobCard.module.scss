@@ -1,0 +1,232 @@
+.job_card {
+  min-height: 158px;
+  border: 4px solid transparent;
+
+  &:hover {
+    border-color: var(--action-green);
+  }
+
+  .city {
+    color: var(--notification-background-blue);
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .applicants {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+
+    @media (max-width: 767px) {
+      width: 100%;
+      flex-wrap: wrap;
+      border: solid #ccc;
+      border-width: 1px 1px 0px 0px;
+    }
+
+    li {
+      line-height: 1.36;
+      letter-spacing: -0.27px;
+      color: var(--notification-background-blue);
+      font-size: 16px;
+      font-weight: 500;
+
+      @media (max-width: 767px) {
+        padding: 10px;
+        width: 50%;
+        border-bottom: 1px solid #ccc;
+        border-left: 1px solid #ccc;
+      }
+    }
+  }
+
+  .date {
+    color: var(--brownish-grey);
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .jobActiveBtn {
+    @media (max-width: 767px) {
+      border: 1px solid #ccc !important;
+      margin: 19px 0 0;
+      padding: 6px 8px;
+    }
+  }
+
+  .jobCard__actions {
+    right: 0;
+
+    @media (max-width: 767px) {
+      position: relative !important;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0 14px;
+
+      >div {}
+    }
+
+    button {
+      &:focus {
+        box-shadow: none !important;
+      }
+    }
+
+    .dropdown_menu_open {
+      @media (max-width: 767px) {
+        left: 36px !important;
+      }
+    }
+
+    .dropdownItems {
+      left: auto !important;
+      right: -30px;
+
+      @media (max-width: 767px) {
+        right: -68px;
+      }
+
+      button {
+        outline: none;
+
+        &:active {
+          background: var(--action-green);
+        }
+      }
+    }
+
+    .copiedBadge {
+      z-index: 3;
+      top: -24px;
+      left: -16px;
+      padding: 4px 7px 3px;
+    }
+  }
+
+  .posted_tag {
+    background: #242429;
+    padding: 3px 10px;
+    line-height: 1.5;
+    border-radius: 20px;
+    color: var(--white);
+    display: inline-block;
+    margin-left: 10px;
+    width: fit-content;
+    vertical-align: middle;
+    position: relative;
+    top: -2px;
+
+    @media (max-width: 767px) {
+      margin-left: 0;
+      display: block;
+      width: fit-content;
+    }
+  }
+
+  .boost_job_button {
+    background: #47d6b5;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #242429;
+    min-width: 160px;
+    outline: none;
+    margin-top: 10px;
+    padding: 0.5rem 1rem;
+    border: 1px solid #47d6b5;
+    font-family: "Roboto", sans-serif;
+
+    &:hover {
+      background: darken($color: #47d6b5, $amount: 10);
+    }
+
+    @media (max-width: 575.98px) {
+      width: 100%;
+    }
+  }
+
+  .boosted_tag {
+    margin-left: 10px;
+    margin-top: 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    height: 38px;
+    background: linear-gradient(90deg,
+        #325bd2 0%,
+        #cd2ca9 99.98%,
+        #c46e07 99.99%,
+        #eac419 100%);
+    border-radius: 50px;
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding: 4px 14px 4px 8px;
+    font-family: "Roboto", sans-serif;
+
+    @media (max-width: 575.98px) {
+      font-size: 14px;
+    }
+  }
+
+  .inprogress_tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #115dfc;
+    margin-top: 10px;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    background: rgba(17, 93, 252, 0.2);
+    border-radius: 50px;
+    padding: 4px 14px 4px 8px;
+  }
+}
+
+.warning_alert {
+  border: solid 1px #eca647;
+  padding: 10px 15px;
+  color: #000;
+
+  .actions {
+    button {
+      padding: 6px 26px;
+    }
+
+    .yes_button {
+      &:focus {
+        background-color: #fff;
+      }
+    }
+
+    .no_button {
+      &:focus {
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+.refunded_badge {
+  background-color: #5c5c5c;
+  font-size: 14px;
+  border-radius: 4px;
+  margin-top: -2px;
+  padding: 1px 10px;
+
+  @media (max-width: 767px) {
+    margin-top: 0px;
+  }
+
+  >span {
+    margin-top: 1px;
+    font-size: 16px;
+  }
+}

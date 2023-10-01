@@ -1,0 +1,115 @@
+.createSiteMain {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 1001;
+  width: 0;
+
+  &.show {
+    right: 0;
+    width: 100%;
+  }
+  .createSiteContainer {
+    width: 686px;
+    height: 100%;
+    right: -686px;
+    top: 60px;
+    bottom: 0;
+    z-index: 9999;
+    transition: all ease-in-out 0.3s;
+    @media (max-width: 991px) {
+      width: 100%;
+    }
+    &.show {
+      right: 0;
+    }
+  }
+  .scroll {
+    height: calc(100vh - 130px);
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}
+
+.custom_dropdown {
+  box-shadow: 0 1px 6px 0 rgb(83 83 83 / 30%);
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 0 0;
+  width: 100%;
+  position: absolute;
+  max-height: 220px;
+  overflow-y: auto;
+  z-index: 12;
+  margin: 2px 0 0;
+  background: var(--white);
+
+  .close_dropdown {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+  }
+
+  ul {
+    padding: 6px 0;
+    margin: 0;
+
+    li {
+      color: var(--black);
+      padding: 4px 15px;
+      display: block;
+      cursor: pointer;
+      transition: all 0.3ms ease-in-out;
+
+      &:hover:not(.closelist) {
+        background-color: var(--background-grey);
+      }
+
+      &.closelist {
+        text-align: right;
+      }
+    }
+  }
+}
+.color_label_dropdown {
+  .color_label_btn {
+    border-radius: 4px;
+    border: solid 1px var(--brownish-grey);
+    background-color: var(--sd);
+    width: 5rem;
+  }
+  .site_label_color {
+    width: 28px;
+    height: 28px;
+    display: block;
+  }
+  .color_label_list {
+    min-width: 5rem;
+    max-width: 5rem;
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      li {
+        cursor: pointer;
+        padding-left: 0.35rem;
+        padding-right: 0.35rem;
+        &.active {
+          span {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &:before {
+              content: "\2713";
+              display: block;
+              margin-top: 2px;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}

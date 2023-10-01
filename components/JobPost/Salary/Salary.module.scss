@@ -1,0 +1,161 @@
+.beta_badge {
+  padding: 5px 16px 3px;
+  font-size: 12px;
+}
+
+.speedMeter__rotate {
+  display: inline-block;
+  left: 0;
+  right: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: 0 auto 0;
+  transition: all ease-in-out 0.3s;
+  -webkit-transform-origin: bottom;
+  -moz-transform-origin: bottom;
+  transform-origin: bottom;
+  width: 25px;
+  height: 84px;
+  transform: translate(0px, 3px) rotate(0deg);
+
+  &.low {
+    transform: translate(10px, 3px) rotate(-62deg);
+  }
+
+  &.good {
+    transform: translate(-5px, 6px) rotate(18deg);
+  }
+
+  &.excelent {
+    transform: translate(-13px, -5px) rotate(90deg);
+  }
+}
+
+.salary {
+  font-size: 22px;
+  text-align: center;
+  font-weight: bold;
+  margin: 15px 0 0;
+
+  .low {
+    color: #d59d3b;
+    font-weight: bold;
+  }
+
+  .good {
+    color: #8dd53b;
+    font-weight: bold;
+  }
+
+  .excelent {
+    color: #3bd55a;
+    font-weight: bold;
+  }
+}
+
+.per_hour {
+  &:before {
+    content: "£";
+    color: #cfcfcf;
+    font-size: 24px;
+    position: absolute;
+    top: 6px;
+    right: 11px;
+  }
+}
+
+.min_max_wrap {
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  border: solid 1px var(--brownish-grey);
+
+  .per_hour {
+    width: 100%;
+
+    &:first-child {
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 10px;
+        height: 28px;
+        width: 1px;
+        background: #d9d9d9;
+      }
+    }
+
+    &::before {
+      top: 18px;
+      font-size: 1rem;
+    }
+
+    label {
+      font-size: 12px;
+    }
+
+    .input_field {
+      border: 0;
+
+      &:focus {
+        outline: none;
+        box-shadow: none;
+        border: 0;
+      }
+    }
+  }
+}
+
+.range_errors {
+  gap: 1rem;
+}
+
+.benefits_checkbox {
+  margin-bottom: 0;
+  padding-left: 35px;
+
+  > label {
+    display: block;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 11px 0 7px;
+    margin-bottom: 0;
+
+    span {
+      color: #535353;
+    }
+
+    input {
+      &:checked {
+        ~ {
+          span {
+            color: #000000;
+          }
+        }
+      }
+    }
+
+    .benefit_icon {
+      position: absolute;
+      top: 7px;
+      left: 0;
+
+      + span {
+        transform: translateY(-4px);
+        display: inline-block;
+      }
+    }
+
+    .checkmark {
+      right: 0;
+      left: auto;
+      top: 12px;
+    }
+  }
+
+  &:last-child {
+    > label {
+      border-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,213 @@
+.cv_search_card {
+  cursor: pointer;
+
+  .cv_search_avatar {
+    width: 46px;
+    height: 46px;
+    overflow: hidden;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .cv_search_info {
+    .profile_view_text {
+      @media (max-width: 767px) {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .license_list {
+    ul {
+      margin-top: 30px;
+
+      li {
+        display: inline-block;
+        margin-right: 8px;
+        margin-bottom: 6px;
+
+        img {
+          -webkit-transform: translate(9px);
+          transform: translate(9px);
+          background: #fff;
+          border-radius: 50%;
+          max-width: 17px;
+        }
+
+        span {
+          background-color: var(--very-light-pink);
+          padding: 3px 15px;
+          display: inline-block;
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 1.36;
+        }
+      }
+    }
+  }
+
+  .detail {
+    .status {
+      font-size: 15px;
+
+      .online {
+        width: 8px;
+        height: 8px;
+      }
+    }
+  }
+}
+
+.applicant_card_new {
+  // border: 3px solid #FFB82E;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  padding: 1.25rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  background: var(--white);
+  border-right: 18px solid #ffb82e;
+  // border-right: 2px solid #E5E5E5;
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    // align-items: center;
+
+    li {
+      flex: 1;
+      padding: 0 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-right: 2px solid #e5e5e5;
+
+      @media (max-width: 767px) {
+        border-right: 0;
+      }
+      &:first-child {
+        flex: 1.35;
+      }
+      &:last-child {
+        flex: 0.75;
+        border: 0;
+      }
+      .detail {
+        .status {
+          font-size: 0.875rem;
+
+          .online {
+            width: 8px;
+            height: 8px;
+          }
+        }
+      }
+    }
+  }
+
+  .user_header {
+    gap: 1.25rem;
+    position: relative;
+
+    .applicant_avatar {
+      flex-shrink: 0;
+      border-radius: 50%;
+      position: relative;
+      cursor: pointer;
+      height: 8rem;
+      width: 8rem;
+
+      @media (max-width: 1445px) {
+        width: 7rem;
+        height: 7rem;
+      }
+
+      @media (max-width: 767px) {
+        width: 4rem;
+        height: 4rem;
+      }
+
+      figure {
+        > img {
+          border-radius: 50%;
+          height: 8rem;
+          width: 8rem;
+
+          @media (max-width: 1445px) {
+            width: 7rem;
+            height: 7rem;
+          }
+
+          @media (max-width: 767px) {
+            width: 4rem;
+            height: 4rem;
+          }
+        }
+      }
+
+      .applicant_badge {
+        position: absolute;
+        right: 10px;
+        bottom: 0.25rem;
+        z-index: 1;
+
+        img {
+          width: 1.5rem;
+
+          @media (max-width: 767px) {
+            width: 18px;
+          }
+        }
+      }
+    }
+
+    .applicant_info {
+      h3 {
+        font-size: 1.125rem;
+        color: var(--black);
+        text-decoration: none;
+        // white-space: nowrap;
+        text-decoration: 2px underline;
+      }
+
+      p {
+        // white-space: nowrap;
+        font-size: 1rem;
+        font-weight: normal;
+        margin-top: 6px;
+        align-items: flex-start !important;
+        letter-spacing: -0.3px;
+        color: var(--black);
+        line-height: 1.2;
+      }
+    }
+  }
+
+  .licenses_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 400px;
+    gap: 0.75rem 0.5rem;
+
+    .license_card {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      padding: 0.25em 0.5rem;
+      background: #d9d9d9;
+
+      img {
+        width: 1.25rem;
+      }
+
+      span {
+        font-size: 0.875rem;
+        font-weight: 600;
+        color: var(--black);
+      }
+    }
+  }
+}

@@ -1,0 +1,124 @@
+.all_uotes_card {
+  .user_info {
+    align-items: flex-start;
+    gap: 1rem;
+
+    .blur_3 {
+      filter: blur(3px);
+      cursor: default;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      color: #535353;
+      font-weight: 600;
+    }
+
+    .text_dim {
+      color: #979797;
+    }
+
+    button {
+      font-weight: normal;
+      flex-shrink: 0;
+
+      &:disabled {
+        background: #d8d8d8;
+        color: #7d7d7d;
+      }
+    }
+  }
+
+  .content {
+    padding: 1.5rem 0 0;
+
+    h3 {
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+    }
+
+    .badgeWrap {
+      gap: 0.5rem 0.75rem;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 1rem;
+
+      .badge {
+        background: #6a6a6a;
+        text-align: center;
+        flex-shrink: 0;
+        padding: 5px 12px;
+        border-radius: 45px;
+        display: inline-block;
+
+        @media (max-width: 767px) {
+          font-size: 12px;
+        }
+      }
+    }
+
+    h4 {
+      // margin: 0;
+      font-weight: 600;
+      color: #242429;
+
+      span {
+        margin-left: 8px;
+        color: #535353;
+      }
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+
+  .expiry_cont {
+    .badge {
+      border-radius: 45px;
+      padding: 4px 20px 4px 20px;
+      font-weight: 600;
+      color: #e90109;
+      gap: 10px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+
+      &.showBg {
+        background: rgba(233, 1, 9, 0.08);
+      }
+    }
+  }
+}
+
+.CountDownExpires {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0 0;
+  padding: 0;
+
+  li {
+    color: var(--black);
+    font-size: 0.985rem;
+
+    span {
+      display: grid;
+      place-items: center;
+      height: 2.5rem;
+      width: 2.5rem;
+      background: #e9e9e9;
+      font-weight: 700;
+      font-size: 1.375rem;
+      border-radius: 2.5px;
+      // margin-top: 6px;
+    }
+  }
+}

@@ -1,0 +1,135 @@
+.boost_card {
+  font-family: "Roboto", sans-serif;
+  .card_wrapper {
+    background: #242429 url("../../../../public/images/boost-job-bg.svg") left -1.5rem /
+      contain no-repeat;
+    border-radius: 8px;
+    padding: 2rem 1.25rem;
+    // margin-top: 1.5rem;
+    // min-height: 340px;
+    text-align: right;
+    h2 {
+      font-size: 1.375rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 1rem;
+    }
+    h3 {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 10px;
+      color: #47d6b5;
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 1;
+
+      img {
+        height: 42px;
+        width: 42px;
+      }
+    }
+    p {
+      font-size: 1rem;
+      font-weight: 400;
+      color: #fff;
+      line-height: 1.4;
+      margin: 1rem 0 1rem auto;
+      max-width: 300px;
+    }
+    h4 {
+      font-size: 1.375rem;
+      font-weight: 700;
+      color: #fff;
+    }
+    ul {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 0;
+      margin: 1.5rem 0 0;
+
+      li {
+        &:not(:first-child) {
+          a {
+            margin-left: -0.75rem;
+            pointer-events: none;
+          }
+        }
+
+        img {
+          height: 45px;
+          width: 45px;
+          border-radius: 50px;
+          border: 1px solid #ffffff;
+        }
+
+        &.plus_value {
+          a {
+            background: #e5e5e5;
+            border: 1px solid #ffffff;
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-size: 12px;
+            color: #535353;
+            border-radius: 50px;
+            height: 45px;
+            width: 45px;
+            display: inline-grid;
+            place-items: center;
+            pointer-events: none;
+
+            &:hover {
+              text-decoration: none;
+              pointer-events: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  > p {
+    text-align: right;
+    color: #5e5e5e;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 1rem;
+  }
+  .arrow_img {
+    display: block;
+    margin-left: auto;
+    margin-right: -2rem;
+  }
+  &.not_available {
+    position: relative;
+    .card_wrapper {
+      min-height: 340px;
+      p {
+        max-width: 275px;
+      }
+    }
+    .overlay {
+      position: absolute;
+      left: 0;
+      border-radius: 8px;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      padding: 2rem 1.25rem;
+      background: rgb(0 0 0/50%);
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      h4 {
+        color: #fff;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 1.125rem;
+        font-weight: 500;
+        line-height: 1;
+        margin-bottom: 0rem;
+      }
+    }
+  }
+}

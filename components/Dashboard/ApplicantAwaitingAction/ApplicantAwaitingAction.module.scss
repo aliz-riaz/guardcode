@@ -1,0 +1,210 @@
+.heading {
+  font-size: 1rem;
+  line-height: 19px;
+  color: #242429;
+  font-weight: 500;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-family: "Roboto", sans-serif;
+
+  span {
+    background: #cc2b2b;
+    height: 22px;
+    width: 22px;
+    font-size: 12px;
+    font-weight: 500;
+    display: inline-grid;
+    place-items: center;
+    border-radius: 50%;
+    color: var(--white);
+  }
+}
+
+.awaiting_action {
+  // margin-bottom: 1.75rem;
+  background: var(--white);
+  border-radius: 4px;
+  font-family: "Roboto", sans-serif;
+  min-height: 392px;
+
+  .card {
+    // background: var(--white);
+    // padding: 12px 16px;
+    // border-radius: 4px;
+    position: relative;
+    z-index: 1;
+    // min-height: 365px;
+    overflow: hidden;
+
+    .list {
+      padding: 14px 0;
+      border-bottom: 1px solid #e5e5e5;
+
+      p {
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 500;
+        margin: 0;
+        // text-decoration-line: underline;
+        color: #242429;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-transform: capitalize;
+        font-family: "Roboto", sans-serif;
+
+        span {
+          font-weight: 400;
+          color: #5c5c5c;
+          display: inline-flex;
+          align-items: center;
+          gap: 0.25rem;
+          flex-shrink: 0;
+
+          &::after {
+            content: "";
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            height: 10px;
+            width: 10px;
+            opacity: 0.35;
+            background: url(../../../public/images/chevron-right.svg)
+              center/auto no-repeat;
+          }
+        }
+      }
+
+      ul {
+        display: flex;
+        align-items: center;
+        padding: 0;
+        margin: 1rem 0 0;
+
+        li {
+          &:not(:first-child) {
+            a {
+              margin-left: -0.65rem;
+              pointer-events: none;
+            }
+          }
+
+          img {
+            height: 43px;
+            width: 43px;
+            border-radius: 50px;
+            border: 1px solid #ffffff;
+          }
+
+          &.plus_value {
+            a {
+              background: #e5e5e5;
+              border: 1px solid #ffffff;
+              font-family: "Roboto", sans-serif;
+              font-weight: 400;
+              font-size: 12px;
+              color: #535353;
+              border-radius: 50px;
+              height: 43px;
+              width: 43px;
+              display: inline-grid;
+              place-items: center;
+              pointer-events: none;
+
+              &:hover {
+                text-decoration: none;
+                pointer-events: none;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .button_style {
+      background: transparent;
+      color: #42af58;
+      border: 0;
+      width: 100%;
+      padding: 0.75rem 0.75rem 0.75rem;
+      font-size: 14px;
+      font-weight: 500;
+      display: block;
+      outline: none;
+      font-family: "Roboto", sans-serif;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    &.show_before {
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        height: 115px;
+        background: linear-gradient(
+          180deg,
+          rgba(229, 229, 229, 0) 0%,
+          rgba(229, 229, 229, 0.7) 78.46%
+        );
+        backdrop-filter: blur(3px);
+      }
+    }
+  }
+
+  .loader_wrap {
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.postJobButton {
+  > div {
+  }
+}
+
+.empty_card {
+  // padding: 2rem;
+  text-align: center;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &.recent_chat {
+    // min-height: 270px;
+  }
+
+  img {
+    height: 120px;
+    object-fit: contain;
+  }
+
+  h3 {
+    font-size: 1.125rem;
+    color: #535353;
+    font-family: "Roboto", sans-serif;
+  }
+
+  p {
+    font-size: 14px;
+    color: #a4a4a4;
+    font-family: "Roboto", sans-serif;
+  }
+
+  button {
+    min-width: 185px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+  }
+}

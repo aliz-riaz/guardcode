@@ -1,0 +1,29 @@
+$GlobalMinimizedChat: calc(100vh - 103px);
+
+.GlobalChannelList_wrapper {
+  max-height: calc(100% - 100px);
+  overflow-y: auto;
+  > div > div {
+    overflow: unset !important;
+  }
+}
+.channel_list_container {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 110px);
+  flex: 0 0 310px;
+  width: 310px;
+  min-width: 0;
+  background: #fff;
+  border-radius: 4px 4px 0 0;
+  border: 1px solid #ccc;
+  border-bottom: 0;
+  padding: 0;
+  transform: translateY(0);
+  animation: fade-in 167ms cubic-bezier(0.4, 0, 1, 1);
+  margin: 0 20px 0 0;
+  transition: all ease-in-out 0.3s;
+  &.minimized {
+    transform: translateY(calc(100vh - 160px));
+  }
+}

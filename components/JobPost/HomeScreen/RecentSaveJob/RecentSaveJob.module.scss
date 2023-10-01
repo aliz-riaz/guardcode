@@ -1,0 +1,138 @@
+.spinner {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  border-radius: 5px;
+  backdrop-filter: blur(2px);
+}
+
+.card {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  flex: 0 0 calc(33.33% - 0.675rem);
+  position: relative;
+  cursor: pointer;
+  background: rgba(59, 213, 90, 0.23);
+
+  @media (max-width: 767.98px) {
+    flex: 0 0 calc(50% - 0.5rem);
+  }
+
+  @media (max-width: 991.98px) {
+    flex: 0 0 calc(50% - 0.5rem);
+  }
+
+  @media (max-width: 767.98px) {
+    flex: 0 0 100%;
+  }
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+  }
+
+  > button {
+    border: 0;
+    background: transparent;
+    padding: 10px;
+    outline: none;
+    position: absolute;
+    right: 0px;
+    top: 5px;
+    z-index: 1;
+  }
+
+  .inner_card {
+    padding: 1.25rem 0.75rem;
+    min-height: 142px;
+
+    .top_wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0 0 8px;
+      padding-right: 1rem;
+
+      h3 {
+        font-size: 1.125rem;
+        color: var(--black);
+        font-weight: 600;
+        margin: 0;
+        padding-right: 0.25rem;
+        @media (max-width: 1440px) {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    p {
+      margin: 0;
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: 1.3;
+      color: var(--black);
+    }
+  }
+
+  .card_footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0.75rem;
+    background: var(--white);
+    min-height: 60px;
+    h2 {
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: var(--black);
+      margin: 0;
+      width: 100px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      @media (max-width: 1440.98px) {
+        font-size: 1rem;
+      }
+    }
+    .drafted {
+      padding: 3px 10px;
+      display: inline-block;
+      background: rgba(17, 93, 252, 0.1);
+      border-radius: 50px;
+      color: #115dfc;
+      flex-shrink: 0;
+      font-size: 12px;
+      font-weight: 400;
+      outline: none;
+      border: 0;
+    }
+  }
+}
+
+.empty_state {
+  padding: 2rem 0rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 320px;
+  margin: 0 auto;
+
+  p {
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: #878787;
+  }
+}

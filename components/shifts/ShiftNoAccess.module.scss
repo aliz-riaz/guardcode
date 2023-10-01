@@ -1,0 +1,389 @@
+.main_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.7rem;
+  position: relative;
+  @media (max-width: 767px) {
+    margin-top: 2.5rem;
+  }
+
+  .wrapper {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1320px;
+    border-radius: 1rem;
+
+    .locked {
+      font-family: "Roboto", sans-serif;
+
+      @media (max-width: 767px) {
+        > img {
+          width: 17px;
+        }
+        position: absolute;
+        top: -14px;
+        left: 35px;
+        font-size: 0.9rem;
+      }
+      @media (max-width: 1280px) {
+        > img {
+          width: 20px;
+        }
+      }
+    }
+    // right side content css
+    .rightSideContent {
+      font-family: "Roboto", sans-serif;
+
+      .heading {
+        font-weight: 700;
+        font-size: 3.75rem;
+        line-height: 1;
+
+        @media (max-width: 1280px) {
+          font-size: 3rem;
+        }
+        @media (max-width: 767px) {
+          font-size: 1.875rem;
+        }
+
+        span {
+          color: #7b61ff;
+        }
+      }
+
+      > p {
+        font-weight: 500;
+        font-size: 1.375rem;
+        line-height: 1.1;
+        @media (max-width: 1280px) {
+          font-size: 1.1rem;
+        }
+        @media (max-width: 767px) {
+          font-size: 0.875rem;
+          br {
+            display: none;
+          }
+        }
+      }
+      .iconAndTextDiv {
+        > div > p {
+          font-size: 1rem;
+          @media (max-width: 1280px) {
+            font-size: 0.82rem;
+          }
+          @media (max-width: 767px) {
+            font-size: 0.75rem;
+          }
+        }
+        > div:last-child {
+          margin-bottom: 1rem;
+        }
+        > div:nth-child(2) {
+          @media (min-width: 768px) {
+            text-align: start;
+            padding-left: 3rem;
+          }
+        }
+        > div > img {
+          @media (max-width: 1280px) {
+            width: 2rem;
+          }
+
+          @media (max-width: 767px) {
+            width: 1.75rem;
+          }
+        }
+        > div {
+          @media (max-width: 767px) {
+            display: flex;
+            gap: 1.5rem;
+          }
+        }
+        > div > p {
+          @media (max-width: 767px) {
+            margin: 0;
+          }
+        }
+        @media (max-width: 767px) {
+          gap: 1rem;
+        }
+      }
+      //no request button css
+      .requestBtn {
+        padding: 0.75rem 2rem;
+        font-size: 1.125rem;
+        border-radius: 8px;
+        letter-spacing: 0.2px;
+        position: relative;
+        @media (max-width: 767px) {
+          padding: 0.4rem 0.75rem;
+          font-size: 0.875rem;
+          width: 100%;
+        }
+      }
+      .accountNotApproved {
+        cursor: pointer;
+        border-radius: 50%;
+        background-color: orange;
+        color: #fdf2e6;
+        width: 22px;
+        flex-shrink: 0;
+        height: 22px;
+        display: inline-grid;
+        place-items: center;
+        // font-style: italic;
+        font-size: 0.875rem;
+        position: absolute;
+        top: -10px;
+        right: -8px;
+        pointer-events: auto;
+      }
+
+      //pending response div
+      .requestAccessResponse {
+        background-color: #e4fff1;
+        border-radius: 1rem;
+        gap: 1rem;
+        padding: 1rem;
+        max-width: 560px;
+        margin-top: 2rem;
+        > p {
+          margin: 0;
+          font-size: 1rem;
+          color: #51b37f;
+          font-weight: 500;
+          font-weight: 600;
+          @media (max-width: 1280px) {
+            font-size: 0.875rem;
+          }
+        }
+        > img {
+          @media (max-width: 1280px) {
+            width: 30px;
+          }
+        }
+      }
+      //request response decline div
+      .requestAccessDeclineResponse {
+        background-color: rgb(250, 200, 200);
+        border-radius: 1rem;
+        gap: 1rem;
+        padding: 1rem;
+        max-width: 560px;
+        margin-top: 2rem;
+        > p {
+          margin: 0;
+          font-size: 1rem;
+          font-weight: 500;
+          font-weight: 600;
+          @media (max-width: 1280px) {
+            font-size: 0.875rem;
+          }
+        }
+        > img {
+          @media (max-width: 1280px) {
+            width: 30px;
+          }
+        }
+      }
+    }
+    //  left side content css
+    .leftSideContent {
+      font-family: "Manrope", sans-serif;
+      .avatar {
+        width: 55px;
+      }
+      @media (max-width: 768px) {
+        .avatar {
+          width: 2rem;
+        }
+      }
+      @media (max-width: 1280px) {
+        .avatar {
+          width: 44px;
+        }
+      }
+      .post_shift {
+        h2 {
+          font-size: 1.25rem;
+          font-weight: 700;
+        }
+
+        h3 {
+          font-size: 1.125rem;
+          color: #5e5e5e;
+          font-weight: 500;
+        }
+
+        p {
+          font-size: 0.875rem;
+          color: #5e5e5e;
+          font-weight: 500;
+        }
+
+        @media (max-width: 1280px) {
+          h2 {
+            font-size: 1.2rem;
+          }
+
+          h3 {
+            font-size: 1rem;
+          }
+
+          p {
+            font-size: 0.8rem;
+          }
+        }
+        @media (max-width: 768px) {
+          h2 {
+            font-size: 1.1rem;
+          }
+
+          h3 {
+            font-size: 0.875rem;
+          }
+
+          p {
+            font-size: 0.7rem;
+          }
+        }
+      }
+
+      .gap {
+        gap: 0.75rem;
+      }
+
+      .box {
+        border-radius: 1rem;
+        box-shadow: 0px 5px 12px 5px rgba(0, 0, 0, 0.05);
+      }
+
+      .applicant_div {
+        .head {
+          h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+          }
+          @media (max-width: 1280px) {
+            h3 {
+              font-size: 1.1rem;
+            }
+          }
+          @media (max-width: 768px) {
+            h3 {
+              font-size: 1.1rem;
+            }
+          }
+        }
+
+        h3 {
+          font-size: 1rem;
+          font-weight: 800;
+        }
+
+        h4 {
+          font-size: 0.775rem;
+          font-weight: 600;
+          color: #a4a4a4;
+        }
+
+        .applicants > * {
+          margin-top: 0.875rem;
+        }
+
+        @media (max-width: 1280px) {
+          h3 {
+            font-size: 0.875rem;
+          }
+          h4 {
+            font-size: 0.6rem;
+          }
+        }
+
+        @media (max-width: 768px) {
+          h3 {
+            font-size: 0.75rem;
+          }
+          h4 {
+            font-size: 0.575rem;
+          }
+        }
+      }
+
+      .check_status {
+        .applicant4 {
+          h3 {
+            font-size: 1rem;
+            font-weight: 800;
+          }
+
+          h4 {
+            font-size: 12px;
+            font-weight: 600;
+            color: #a4a4a4;
+          }
+
+          .applicant4_img {
+            position: relative;
+            width: 55px;
+            .status {
+              position: absolute;
+              right: 0px;
+              top: 7px;
+            }
+          }
+        }
+        .check_Status {
+          color: #51b37f;
+          font-size: 0.875rem;
+          font-weight: 700;
+        }
+
+        @media (max-width: 1280px) {
+          .applicant4 {
+            h3 {
+              font-size: 0.875rem;
+            }
+            h4 {
+              font-size: 0.6rem;
+            }
+            .applicant4_img {
+              position: relative;
+
+              .status {
+                right: -3px;
+                top: 5px;
+              }
+            }
+          }
+          .check_Status {
+            font-size: 0.5rem;
+          }
+        }
+        @media (max-width: 768px) {
+          .applicant4 {
+            h3 {
+              font-size: 0.75rem;
+            }
+            h4 {
+              font-size: 0.575rem;
+            }
+            .applicant4_img {
+              position: relative;
+
+              .status {
+                right: -3px;
+                top: 5px;
+              }
+            }
+          }
+          .check_Status {
+            font-size: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.filters_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 20px 16px;
+  border-radius: 4px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 10px;
+
+    // .right_side {
+    //   flex-direction: column;
+    //   width: 100%;
+    //   gap: 10px;
+    // }
+  }
+
+  .right_side {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 0;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      width: 100%;
+      gap: 10px;
+    }
+  }
+
+  .left_side {
+    display: flex;
+  }
+}

@@ -1,0 +1,206 @@
+.h4 {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 1rem;
+}
+.addShift_wraper {
+  font-family: "Roboto", sans-serif;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  gap: 2px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    gap: 30px;
+  }
+
+  input {
+    width: 100%;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 10px;
+    text-align: center;
+    min-height: 44px;
+
+    @media (max-width: 1280px) {
+    }
+
+    @media (max-width: 768px) {
+      padding: 5px;
+      font-size: 12px;
+    }
+  }
+
+  .h5 {
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    > .mintsHeading {
+      font-size: 0.755rem;
+    }
+
+    @media (max-width: 1280px) {
+      font-size: 10.75px;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 12px;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  .error_text {
+    font-size: 13px;
+    font-weight: 500;
+    margin: 3px 0;
+
+    @media (max-width: 1280px) {
+      font-size: 12px;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
+  }
+
+  input,
+  button {
+    outline: none;
+    background-color: white;
+  }
+
+  .date_div {
+    font-family: "Roboto", sans-serif;
+
+    input {
+      width: 100%;
+      border: 1px solid #a4a4a4;
+      border-radius: 4px;
+      color: #5e5e5e;
+    }
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+
+  .start_time_div,
+  .end_time_div {
+    font-family: "Roboto", sans-serif;
+
+    input {
+      border: 1px solid #a4a4a4;
+      border-radius: 4px;
+      color: #5e5e5e;
+    }
+  }
+
+  .paid_break_div {
+    font-family: "Roboto", sans-serif;
+
+    input {
+      width: 100%;
+      border: 1px solid #a4a4a4;
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+      text-align: center;
+      color: #5e5e5e;
+    }
+
+    button {
+      border: 1px solid #a4a4a4;
+      width: 40px;
+      flex-shrink: 0;
+      font-size: 1.125rem;
+      border-left: 0;
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+    }
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+
+  .workers_required_div {
+    display: flex;
+    font-family: "Roboto", sans-serif;
+
+    input {
+      border: 1px solid #a4a4a4;
+      text-align: center;
+      border-left: 0;
+      border-right: 0;
+      color: #5e5e5e;
+    }
+
+    @media (max-width: 768px) {
+      input {
+        width: 100%;
+      }
+    }
+
+    button {
+      border: 1px solid #a4a4a4;
+      width: 40px;
+      font-size: 1.125rem;
+      flex-shrink: 0;
+    }
+
+    .plus_btn {
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+    }
+
+    .minus_btn {
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+    }
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+
+  .pay_rate_div {
+    // width: 115px;
+    // max-width: 120px;
+    font-family: "Roboto", sans-serif;
+
+    input {
+      width: 100%;
+      // margin: 0;
+      border: 1px solid #a4a4a4;
+      border-radius: 4px;
+      color: #5e5e5e;
+    }
+  }
+
+  .delete_shift {
+    justify-content: center;
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+      position: absolute;
+      right: 0px;
+      top: -8px;
+      img {
+        height: 1.2rem;
+      }
+    }
+    @media (min-width: 1200px) {
+      margin-top: 1.2rem;
+
+      img {
+        height: 1.3rem;
+      }
+    }
+  }
+}
+
+.add_shift_btn {
+  color: #115dfc;
+  font-weight: 500;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+}

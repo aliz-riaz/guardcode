@@ -1,0 +1,133 @@
+// tagging styles
+.dropdown_for_taging {
+  // position: absolute;
+  // left: 10px;
+  // top: 12px;
+  margin: 10px 0px 0 10px;
+  // min-width: 180px;
+  .applied_tag_box {
+    .delete_btn {
+      top: -10px;
+      right: -10px;
+      display: none;
+      visibility: hidden;
+      transition: all ease-in-out 0.3s;
+    }
+    &:hover {
+      .delete_btn {
+        display: block;
+        visibility: visible;
+      }
+    }
+  }
+  .applied_tag {
+    &.yellow {
+      background-color: #ffa700;
+    }
+    &.green {
+      background-color: #00cf2e;
+    }
+    &.red {
+      background-color: #ff7473;
+    }
+  }
+  .taging_dropdown_btn {
+    color: #000;
+    text-decoration: underline;
+    &:hover,
+    &:focus,
+    &:active {
+      box-shadow: none;
+      color: #000;
+    }
+  }
+  .taging_dropdown {
+    // top: -11px !important;
+    display: flex;
+    justify-content: start;
+    width: 100%;
+  }
+  .taging_dropdown_list {
+    transform: translate3d(20px, 0px, 0px) !important;
+    z-index: 9;
+    right: auto !important;
+    left: -22px !important;
+  }
+  .taging_list {
+    ul {
+      li {
+        &:first-child {
+          margin-top: 0;
+        }
+
+        display: inline-block;
+        margin-top: 6px;
+        cursor: pointer;
+        &.yellow {
+          background-color: #ffa700;
+        }
+        &.green {
+          background-color: #00cf2e;
+        }
+        &.red {
+          background-color: #ff7473;
+        }
+        &:nth-child(even) {
+          display: block;
+          margin: 0;
+          height: 0;
+        }
+      }
+    }
+  }
+  .selected_tag_box {
+    > span {
+      &.red {
+        background-color: #ff7473;
+      }
+    }
+    textarea {
+      background-color: #d9d9d9;
+      resize: none;
+      font-size: 14px;
+      min-height: 100px;
+    }
+  }
+  .create_tag_box {
+    .select_tag_color {
+      ul {
+        li {
+          width: 26px;
+          height: 26px;
+          background-repeat: no-repeat;
+          background-size: 20px;
+          background-position: center;
+          &.yellow {
+            background-color: #ffa700;
+          }
+          &.green {
+            background-color: #00cf2e;
+          }
+          &.red {
+            background-color: #ff7473;
+          }
+          &.active {
+            background-image: url(../../../public/images/d-check-1.png);
+          }
+        }
+      }
+    }
+    .tag_val {
+      input {
+        background-color: #d9d9d9;
+      }
+    }
+  }
+  .save_btn {
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+      box-shadow: none;
+    }
+  }
+}

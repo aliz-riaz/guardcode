@@ -1,0 +1,291 @@
+.add_new_card {
+  margin-top: 1rem;
+  padding: 1.5rem;
+  width: 100%;
+  background: #f8f8f8;
+  border: 1px solid #f0f0f0;
+  border-radius: 6px;
+  font-family: "Roboto", sans-serif;
+
+  @media (max-width: 575.98px) {
+    padding: 1rem 0.75rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #242429;
+    line-height: 1.4;
+    span {
+      display: block;
+      font-weight: 400;
+      color: #a4a4a4;
+    }
+  }
+  .card {
+    position: relative;
+    margin-bottom: 1.75rem;
+    @media (max-width: 575.98px) {
+      margin-bottom: 0;
+    }
+    .card_front {
+      max-width: 480px;
+      width: 100%;
+      height: 310px;
+      position: relative;
+      z-index: 1;
+      background: linear-gradient(
+        180deg,
+        #ffffff 0%,
+        rgba(255, 255, 255, 0.9) 100%
+      );
+      border: 1px solid #f0f0f0;
+      backdrop-filter: blur(3px);
+      border-radius: 12px;
+      padding: 1.75rem;
+      @media (max-width: 575.98px) {
+        height: 220px;
+        padding: 1rem 1rem;
+      }
+      .input_field {
+        margin-bottom: 1rem;
+        label {
+          display: block;
+          color: #242429;
+          font-weight: 500;
+          font-size: 1.125rem;
+          margin-bottom: 6px;
+          @media (max-width: 575.98px) {
+            font-size: 14px;
+          }
+        }
+        .card_wrap {
+          border-radius: 8px;
+          height: 54px;
+          width: 100%;
+          padding: 12px 1rem;
+          display: flex;
+          align-items: center;
+          background: #fff;
+          border: 1px solid #cfcfcf;
+          &:nth-child(2) {
+            > div {
+              width: 100%;
+              padding: 0.5rem;
+              input {
+                font-size: 2rem !important;
+              }
+            }
+          }
+          @media (max-width: 575.98px) {
+            height: 40px;
+            padding: 12px 10px;
+          }
+        }
+        .input {
+          background: #ffffff;
+          border: 1px solid #cfcfcf;
+          border-radius: 8px;
+          height: 54px;
+          width: 100%;
+          padding: 12px 1rem;
+          background: #fff;
+          &:focus {
+            outline: none;
+          }
+          @media (max-width: 575.98px) {
+            height: 40px;
+            padding: 12px 10px;
+          }
+        }
+      }
+      .checkbox_wrap {
+        position: absolute;
+        bottom: 1rem;
+        left: 1.75rem;
+        @media (max-width: 575.98px) {
+          bottom: 0.25rem;
+          left: 1rem;
+        }
+        label {
+          color: #242429;
+          font-size: 1.125rem;
+          font-weight: 400;
+          display: inline-block;
+          cursor: pointer;
+          @media (max-width: 575.98px) {
+            font-size: 14px;
+            margin: 0;
+          }
+        }
+        input[type="checkbox"] {
+          position: relative;
+          border: 0;
+          cursor: pointer;
+          line-height: 0;
+          margin: 0 0.6em 0 0;
+          outline: 0;
+          padding: 0 !important;
+          vertical-align: text-top;
+          height: 20px;
+          width: 20px;
+          background: #e5e5e5;
+          border-radius: 4px;
+          -webkit-appearance: none;
+          &:checked {
+            background-color: #3bd55a;
+            opacity: 1;
+            &::before {
+              opacity: 1;
+            }
+          }
+          &::before {
+            content: "";
+            position: absolute;
+            right: 50%;
+            top: 50%;
+            width: 6px;
+            height: 14px;
+            border: solid #fff;
+            border-width: 0 2px 2px 0;
+            margin: -1px -1px 0 -1px;
+            transform: rotate(45deg) translate(-50%, -50%);
+            z-index: 2;
+            opacity: 0;
+          }
+          @media (max-width: 575.98px) {
+            height: 18px;
+            width: 18px;
+          }
+        }
+      }
+    }
+    .card_back {
+      position: absolute;
+      background: #303030;
+      border: 1px solid #303030;
+      border-radius: 12px;
+      max-width: 480px;
+      width: 100%;
+      padding: 1.75rem;
+      height: 300px;
+      position: absolute;
+      left: 150px;
+      top: 1.75rem;
+      padding-top: 104px;
+      display: flex;
+      justify-content: flex-end;
+      @media (max-width: 991.98px) {
+        position: relative;
+        left: auto;
+        top: 0;
+        margin-top: 1rem;
+      }
+      @media (max-width: 575.98px) {
+        position: relative;
+        left: auto;
+        top: 0;
+        padding-top: 75px;
+        height: 220px;
+        margin-top: 1rem;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        height: 50px;
+        width: 100%;
+        left: 0;
+        right: 0;
+        top: 2rem;
+        background: #242429;
+        @media (max-width: 575.98px) {
+          top: 1.5rem;
+          height: 40px;
+        }
+      }
+      .input_field {
+        width: 98px;
+        margin-bottom: 1rem;
+        label {
+          display: block;
+          color: #fff;
+          font-weight: 500;
+          font-size: 1.125rem;
+          margin-bottom: 6px;
+          @media (max-width: 575.98px) {
+            font-size: 14px;
+          }
+        }
+        .card_wrap {
+          border-radius: 8px;
+          height: 54px;
+          width: 100%;
+          padding: 12px 1rem;
+          display: flex;
+          align-items: center;
+          background: #fff;
+          border: 1px solid #cfcfcf;
+          &:nth-child(2) {
+            > div {
+              width: 100%;
+              padding: 0.5rem;
+              input {
+                font-size: 2rem !important;
+              }
+            }
+          }
+          @media (max-width: 575.98px) {
+            height: 40px;
+            padding: 12px 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .buttons_wrapper {
+    align-items: center;
+    p {
+      font-weight: 400;
+      font-size: 1rem;
+      color: #5e5e5e;
+      margin: 0;
+      @media (max-width: 767.98px) {
+        margin: 0.75rem 0;
+      }
+    }
+    .save_card {
+      background: #242429;
+      border-radius: 4px;
+      font-size: 1.125rem;
+      font-weight: 700;
+      color: #fff;
+      padding: 0.6rem 1rem;
+      width: 160px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      border: 2px solid #242429;
+      transition: 0.2s ease-in-out;
+      outline: none;
+
+      &:hover {
+        background: #fff;
+        color: #242429;
+        border-color: #242429;
+      }
+      &:disabled {
+        background: #f0f0f0;
+        border-radius: 5px;
+        border-color: #f0f0f0;
+        color: #a4a4a4;
+        cursor: not-allowed;
+      }
+      @media (max-width: 575.98px) {
+        width: 100%;
+        font-size: 14px;
+      }
+    }
+  }
+}

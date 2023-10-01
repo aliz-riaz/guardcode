@@ -1,0 +1,28 @@
+.no_credit_alert {
+  background: #ffab00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 10px 14px;
+  border-radius: 5px;
+  width: fit-content;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #242429;
+  animation: fadeIn 1s;
+  margin: 0 auto;
+  a {
+    font-weight: 600;
+    text-decoration: underline !important;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}

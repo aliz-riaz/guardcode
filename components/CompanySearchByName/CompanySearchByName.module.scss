@@ -1,0 +1,77 @@
+.company_search_box {
+  background-color: #fff;
+  display: flex;
+  @media (max-width: 767px) {
+    margin: 0 auto 26px;
+  }
+  input {
+    flex-grow: 1;
+    border: 0;
+    border-radius: 0;
+    background-color: #fff;
+    border-radius: 3px 0px 0px 3px;
+    border: solid 1px #979797;
+    border-right: 0;
+    padding: 2px 8px;
+    &:focus {
+      box-shadow: none;
+      outline: none;
+    }
+  }
+  button {
+    flex-shrink: 0;
+    width: 60px;
+    padding: 10px 0;
+    background-color: #3bd55a;
+    outline: 0;
+    border: 0;
+  }
+}
+.compnay_tabs {
+  border-bottom: 0;
+  margin: -45px 0 40px;
+  @media (max-width: 767px) {
+    margin: 0px 0 40px;
+    justify-content: center;
+  }
+  li {
+    margin-left: 20px;
+    @media (max-width: 767px) {
+      margin-bottom: 15px;
+    }
+    &:first-child {
+      margin-left: 0;
+    }
+    button {
+      box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%);
+      font-size: 16px;
+      border: 0 !important;
+      border-radius: 0 !important;
+      outline: 0;
+      padding: 12px 25px 10px;
+      color: #000;
+      background-color: #fff;
+    }
+    button[aria-selected="true"] {
+      color: #3bd55a !important;
+      border: 1px solid #3bd55a !important;
+    }
+  }
+}
+
+.company_tab {
+  .show_companies {
+    font-size: 16px;
+    color: #242429;
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px !important;
+}
+
+.showHide {
+  pointer-events: none;
+}

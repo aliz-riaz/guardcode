@@ -1,0 +1,26 @@
+.empty_plan {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  min-height: 80%;
+  h3 {
+    color: #535353;
+  }
+  p {
+    color: #a4a4a4;
+    font-size: 14px;
+    line-height: 1.2;
+    a,
+    button {
+      color: #a4a4a4;
+      text-decoration: underline;
+      padding: 0;
+      outline: none;
+      border: 0;
+      display: inline-block;
+      background: transparent;
+    }
+  }
+}

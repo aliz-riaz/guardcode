@@ -1,0 +1,289 @@
+.quote_section {
+  position: relative;
+  padding: 6rem 0 2rem;
+  z-index: 1;
+  background: #f2f2f2;
+
+  @media (max-width: 767px) {
+    padding: 3rem 0 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    max-height: 550px;
+    background: rgba(255, 185, 0, 0.2) url(../../public/images/staffing-img.png) right top/contain no-repeat;
+
+    @media (max-width: 767px) {
+      background: rgba(255, 185, 0, 0.2);
+    }
+  }
+
+  h2 {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+
+    &::before {
+      content: "";
+      height: 58px;
+      width: 58px;
+      position: absolute;
+      left: -1rem;
+      top: -0.75rem;
+      z-index: -1;
+      background: url(../../public/images/BrandLines.png) center/contain no-repeat;
+    }
+  }
+
+  h3 {
+    color: #545454;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: -0.05em;
+
+    @media (max-width: 767px) {
+      font-size: 1.125rem !important;
+    }
+  }
+
+  .instant_quote {
+    background: var(--white);
+    padding: 2.5rem 2rem;
+    box-shadow: -3px 4px 13px rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+    position: relative;
+
+    @media (max-width: 767px) {
+      padding: 1rem;
+    }
+
+    label {
+      font-weight: 600;
+      font-size: 1.125rem;
+    }
+
+    .input_field {
+      max-width: 375px;
+
+      @media (max-width: 991px) {
+        max-width: none;
+      }
+
+      input,
+      select {
+        border-color: #bdbdbd;
+        border-radius: 10px;
+        padding-right: 2rem;
+        text-overflow: ellipsis;
+      }
+
+      .location_disabled {
+        background-color: #e9ecef;
+        pointer-events: none;
+      }
+
+      .loading {
+        position: absolute;
+        top: 40px;
+        right: -40px;
+
+        @media (max-width: 767px) {
+          right: 7px;
+        }
+      }
+
+      .dropdown_list {
+        >button {
+          border: #bdbdbd 1px solid;
+          border-radius: 10px;
+          padding: 10px 15px;
+          background-image: url("../../public/images/chevron-down-bl.png");
+          background-repeat: no-repeat;
+          background-position: right 9px center;
+          background-size: 22px;
+
+          &:focus {
+            border-width: 1px;
+            box-shadow: none;
+          }
+
+          &.location_disabled {
+            background-color: #e9ecef !important;
+            pointer-events: none;
+          }
+        }
+
+        .dropdown_menu {
+          width: 100%;
+          max-height: 300px;
+          overflow-y: auto;
+          border-radius: 10px;
+
+          ul {
+            li {
+              padding: 6px 10px;
+              transition: all ease-in-out 0.3s;
+
+              &:hover {
+                background-color: rgba(0, 0, 0, 0.2);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    h3 {
+      font-size: 1.875rem;
+      color: #42af58;
+      letter-spacing: -0.05em;
+      font-weight: 600;
+
+      @media (max-width: 767px) {
+        font-size: 1.25rem;
+      }
+    }
+
+    .quote_info {
+      position: absolute;
+      right: -1.5rem;
+      width: 100%;
+      padding: 1.5rem;
+      top: -5rem;
+      // bottom: 0rem;
+      background: #272121;
+      border-radius: 20px;
+      max-width: 450px;
+
+      @media (max-width: 991px) {
+        max-width: none;
+      }
+
+      @media (max-width: 767px) {
+        margin-top: 1rem;
+        padding: 1.25rem;
+      }
+
+      .input_field {
+        max-width: 100%;
+      }
+
+      label {
+        color: var(--white);
+      }
+
+      .btn_md {
+        color: var(--black);
+        background: #3bd55a;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 0.5rem;
+        border: 3px solid #3bd55a;
+
+        @media (max-width: 991px) {
+          flex: 1;
+        }
+
+        @media (max-width: 767px) {
+          margin-bottom: 1rem;
+          flex: 100%;
+        }
+      }
+
+      .btn_md_outline {
+        text-align: center;
+        background: transparent;
+        flex: 1;
+        border: 2px solid #3bd55a;
+        color: #3bd55a;
+
+        &:hover {
+          background: #3bd55a;
+          color: var(--black);
+        }
+
+        @media (max-width: 991px) {
+          flex: 1;
+        }
+      }
+
+      @media (max-width: 991.99px) {
+        position: unset;
+      }
+    }
+
+    .rangeslider {
+      max-width: 375px;
+
+      @media (max-width: 991px) {
+        max-width: none;
+      }
+    }
+  }
+}
+
+.quotationModal {
+  padding: 2rem;
+  text-align: center;
+
+  h2 {
+    color: #42af58;
+    font-weight: 600;
+    font-size: 1.875rem;
+    letter-spacing: -0.05em;
+    margin-bottom: 2.5rem;
+  }
+
+  h3 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+    color: var(--black);
+    letter-spacing: -0.05em;
+
+    del {
+      display: block;
+      font-size: 1.5rem;
+      color: #d20000;
+      letter-spacing: 0;
+    }
+
+    span {
+      margin-top: 5px;
+      letter-spacing: 0;
+      color: #42af58;
+      display: block;
+      font-size: 1.5rem;
+    }
+  }
+
+  p {
+    color: #545454;
+    font-size: 14px;
+  }
+
+  .btn_md {
+    font-size: 1.25rem;
+    color: var(--black);
+    background: #3bd55a;
+    border: 3px solid #3bd55a;
+  }
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: var(--black);
+    letter-spacing: -0.05em;
+    text-decoration-line: underline;
+  }
+}

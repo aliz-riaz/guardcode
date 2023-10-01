@@ -1,0 +1,112 @@
+.createRoleMain {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 1001;
+  width: 0;
+
+  &.show {
+    right: 0;
+    width: 100%;
+  }
+  .createRoleContainer {
+    width: 686px;
+    height: 100%;
+    right: -686px;
+    top: 60px;
+    bottom: 0;
+    z-index: 9999;
+    transition: all ease-in-out 0.3s;
+    @media (max-width: 991px) {
+      width: 100%;
+    }
+    &.show {
+      right: 0;
+    }
+  }
+  .scroll {
+    height: calc(100vh - 130px);
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .license_checkbox {
+    border: 1px solid #a4a4a4;
+    border-radius: 4px;
+    width: 135px;
+    height: 105px;
+    padding-left: 0;
+    @media (max-width: 767px) {
+      width: calc(50% - 8px);
+    }
+
+    label {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      .shortName {
+        font-size: 18px;
+      }
+      span {
+        color: #5e5e5e;
+      }
+      .checkmark {
+        top: 6px;
+        left: 6px;
+      }
+    }
+  }
+  .uniform_radio {
+    border: 1px solid #a4a4a4;
+    border-radius: 4px;
+    -webkit-flex-shrink: 0;
+    flex-shrink: 0;
+    width: 30%;
+    height: 36px;
+    padding-left: 36px;
+    label {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      .checkmark {
+        top: 8px;
+        left: 8px;
+      }
+    }
+  }
+  .uploadButton {
+    display: inline-block;
+    padding: 6px 20px;
+    font-size: 15px;
+    border: 1px solid #3bd55a;
+    border-radius: 4px;
+    color: #3bd55a;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+
+    &:hover {
+      background-color: #3bd55a;
+      color: #fff;
+    }
+
+    input[type="file"] {
+      display: none;
+    }
+  }
+  .close_img {
+    position: absolute;
+    top: -10px;
+    right: -6px;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+  }
+}

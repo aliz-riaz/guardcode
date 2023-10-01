@@ -1,0 +1,11 @@
+.noConversation {
+  height: calc(100vh - 60px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  &.with_filters {
+    height: calc(100vh - 133px);
+  }
+}

@@ -1,0 +1,145 @@
+.error_text {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 5px 0;
+
+  @media (max-width: 1280px) {
+    font-size: 10.75px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 8px;
+  }
+}
+
+.role_col {
+  // border-bottom: 1px solid #e5e5e5;
+  //   padding-bottom: 32px;
+  margin-bottom: 10px;
+
+  h4 {
+    font-family: "Roboto", sans-serif;
+  }
+
+  @media (max-width: 767px) {
+    padding-bottom: 22px;
+    margin-bottom: 20px;
+  }
+}
+
+.venue_wrap {
+  gap: 1rem;
+
+  @media (max-width: 767px) {
+    flex-wrap: wrap;
+
+    >div {
+      flex: 0 0 33%;
+      max-width: 33%;
+    }
+  }
+
+  .venue_box {
+    border: solid 1px #a4a4a4;
+    background-color: var(--sd);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-radius: 3.781px;
+    font-family: "Roboto", sans-serif;
+    padding: 10px 4px 10px;
+    min-height: 96px;
+
+    @media (max-width: 767px) {
+      margin-bottom: 10px;
+      width: 100%;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    .select_icon {
+      width: 16px;
+      height: 16px;
+      background-color: var(--background-grey);
+      border-radius: 50%;
+      position: absolute;
+      top: 3px;
+      border: 3.4px solid #e5e5e5;
+    }
+
+    &.selected {
+      border-color: var(--action-green);
+      box-shadow: 0 0 4px var(--action-green);
+      background: #F9FFFA;
+
+      .select_icon {
+        background-color: var(--action-green);
+
+        &::before {
+          margin: 2px 0 0 5px;
+          -webkit-transform: rotate(45deg);
+          -moz-transform: rotate(45deg);
+          transform: rotate(45deg);
+          height: 10px;
+          width: 6px;
+          border-bottom: 2px solid #fff;
+          border-right: 2px solid #fff;
+        }
+      }
+    }
+
+    &.other_box {
+      border: solid 1px var(--brown-grey);
+      background-color: var(--sd);
+      position: relative;
+      // display: flex;
+      // flex-direction: column;
+      justify-content: flex-start;
+      text-align: left;
+      padding: 0;
+      border: 0;
+      gap: 0.5rem;
+      flex-direction: row;
+      box-sizing: border-box;
+
+      span {
+        position: unset;
+        margin: 0 0 10px;
+      }
+    }
+
+    .venue_icon {
+      height: 22px;
+      margin: 0 auto;
+    }
+
+    .venu_name {
+      letter-spacing: -0.27px;
+      text-align: center;
+      color: #5E5E5E;
+      font-size: 14px;
+font-weight: 500;
+      margin-top: 10px;
+    }
+  }
+
+  .others_input {
+    input {
+      padding: 10px 15px 10px !important;
+
+      &:focus {
+        padding: 10px 15px 10px;
+      }
+    }
+
+    input:focus+label,
+    input:not(:placeholder-shown)+label {
+      display: none;
+      padding: 10px 15px 10px;
+    }
+  }
+}

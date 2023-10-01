@@ -1,0 +1,64 @@
+.payment_confirm_modal {
+  padding: 1.5rem 1.5rem 1rem;
+  background: #fff;
+  max-width: 300px;
+  border-radius: 9px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  .img_wrap {
+    margin: 0 0 1.25rem;
+  }
+
+  .lottie_wrap {
+    max-width: 160px;
+    max-height: 140px;
+    margin: 0 auto 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 1rem;
+  }
+  p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 0.5rem;
+  }
+  .button_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    button {
+      border-radius: 5px;
+      font-size: 1rem;
+      font-weight: 700;
+      color: #fff;
+      outline: none;
+      margin-top: 10px;
+      padding: 0.6rem 1rem;
+      flex-shrink: 0;
+      flex: 1;
+      border: 1px solid #3bd55a;
+      transition: 0.3s ease-in-out;
+      background: #3bd55a;
+      flex: 1;
+      font-size: 1.125rem;
+      text-align: center;
+      color: #242429;
+      &:hover {
+        background: darken($color: #3bd55a, $amount: 10);
+      }
+      &:disabled {
+        background: #f0f0f0;
+        color: #a4a4a4;
+        cursor: not-allowed;
+        border-color: #f0f0f0;
+      }
+    }
+  }
+}

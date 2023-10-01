@@ -1,0 +1,67 @@
+.channel_card {
+  padding: 0 20px;
+  p,
+  span {
+    font-size: 14px;
+  }
+  .channel_card_inner {
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 14px;
+    padding: 22px 0 3px;
+    .job_name {
+      color: #5c5c5c;
+      font-size: 14px;
+      font-weight: normal;
+    }
+    .channel_card_row {
+      margin-top: 10px;
+      .card_img {
+        position: relative;
+        img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          overflow: hidden;
+        }
+      }
+      .card_cont {
+        padding-left: 15px;
+        position: relative;
+        word-break: break-word;
+        .time {
+          color: #cfcfcf;
+        }
+        .latest_message {
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+        }
+        p {
+          font-size: 14px;
+          margin-top: 2px;
+          padding-right: 30px;
+          overflow-wrap: break-word;
+          white-space: pre-wrap;
+        }
+        .unread_status {
+          position: absolute;
+          top: 27px;
+          right: 0;
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          background-color: #3bd55a;
+        }
+      }
+    }
+  }
+  &:hover {
+    background-color: #f2f2f2;
+  }
+  &.active {
+    @media (min-width: 768px) {
+      background-color: #f2f2f2;
+    }
+  }
+}

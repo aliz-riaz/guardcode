@@ -1,0 +1,48 @@
+.stats_tabs {
+  .posted_tag {
+    background: #242429;
+    padding: 3px 10px;
+    line-height: 1.5;
+    border-radius: 20px;
+    color: var(--white);
+    display: inline-block;
+    margin-left: 10px;
+    width: fit-content;
+    vertical-align: middle;
+    position: relative;
+    top: -2px;
+  }
+
+  li {
+    font-size: 14px;
+    position: relative;
+    min-height: 54px;
+
+    @media (max-width: 767px) {
+      font-size: 14px !important;
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 1;
+      margin: 0;
+      text-align: center;
+    }
+
+    &.active {
+      font-weight: bold;
+
+      &:before {
+        background-color: var(--action-green);
+      }
+    }
+
+    &:before {
+      content: "";
+      display: block;
+      height: 4px;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+}

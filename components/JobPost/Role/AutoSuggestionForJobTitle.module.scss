@@ -1,0 +1,31 @@
+.suggestionsList {
+  width: 100%;
+  position: absolute;
+  max-height: 220px;
+  overflow-y: auto;
+  z-index: 12;
+  margin: 2px 0 0;
+  box-shadow: 0 1px 6px 0 rgb(83 83 83 / 30%);
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 0 0;
+  list-style: none;
+  padding: 0;
+  top: 49px;
+}
+.suggestion {
+  color: var(--black);
+  padding: 4px 15px;
+  display: block;
+  cursor: pointer;
+  -webkit-transition: all 0.3ms ease-in-out;
+  -moz-transition: all 0.3ms ease-in-out;
+  transition: all 0.3ms ease-in-out;
+  &:hover {
+    background-color: var(--background-grey);
+  }
+}
+
+// .suggestionHighlighted {
+//     background-color: var(--background-grey);
+// }

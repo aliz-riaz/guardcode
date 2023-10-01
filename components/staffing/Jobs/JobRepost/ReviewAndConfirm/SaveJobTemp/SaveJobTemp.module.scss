@@ -1,0 +1,53 @@
+.saveJobTemp {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 1.25rem 1rem;
+  overflow: hidden;
+  background: var(--white);
+  // position: sticky;
+  // top: 5rem;
+  // transition: 0.5s ease-in-out;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 1.5rem;
+  // max-width: 356px;
+  @media (max-width: 767.98px) {
+    margin-top: 1.5rem;
+  }
+
+  .gl_checkbox {
+    span {
+      line-height: 1.1;
+    }
+
+    p {
+      color: #878787;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1;
+      margin: 6px 0 0;
+    }
+  }
+
+  .card_footer {
+    border-top: 1px solid #e5e5e5;
+    padding: 1.25rem 0 0rem;
+
+    h3 {
+      color: var(--black);
+    }
+
+    .input_wrap {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      .gl_radio {
+        font-size: unset;
+
+        span {
+          color: #242429;
+        }
+      }
+    }
+  }
+}

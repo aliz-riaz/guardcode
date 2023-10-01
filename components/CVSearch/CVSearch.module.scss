@@ -1,0 +1,21 @@
+.loading {
+  min-height: 180px;
+}
+
+.search_detail {
+  h3 {
+    span {
+      width: 34px;
+      height: 34px;
+      transform: translateY(-2px);
+    }
+  }
+}
+.cv_search_left {
+  transition: width 0.3s;
+  &.active {
+    @media (min-width: 768px) {
+      width: calc(100% - 390px);
+    }
+  }
+}

@@ -1,0 +1,89 @@
+.container {
+  font-family: "Roboto", sans-serif;
+  background: #f8f8f8;
+  padding: 1.5rem;
+  height: calc(100% + 2.95rem);
+  border-radius: 0 9px 9px 0;
+  margin-top: -2.95rem;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 991px) {
+    margin-top: 0;
+  }
+
+  hr {
+    margin: 1.5rem 0;
+    background: #000000;
+  }
+  .total_cont {
+    h4 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #303030;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    p {
+      color: #303030;
+      font-size: 1.25rem;
+      font-weight: 700;
+    }
+  }
+}
+
+.order_item {
+  font-family: "Roboto", sans-serif;
+  line-height: 1;
+
+  h3 {
+    color: #303030;
+  }
+  p {
+    line-height: 1.2;
+    color: #303030;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 1.25rem;
+    span {
+      display: block;
+    }
+  }
+  .remove_item {
+    border: 0;
+    padding: 0;
+    color: #303030;
+    outline: none;
+    font-size: 0.875rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    text-decoration: underline;
+    background: transparent;
+  }
+  & + .order_item {
+    margin-top: 1.5rem;
+  }
+}
+
+.empty_state_order {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  @media (max-width: 767.98px) {
+    display: none;
+  }
+  h3 {
+    margin-left: -2.5rem;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    gap: 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 400;
+    font-family: "Headland One", serif;
+    letter-spacing: 0.005em;
+    transform: rotate(3.52deg);
+    line-height: 1;
+  }
+}

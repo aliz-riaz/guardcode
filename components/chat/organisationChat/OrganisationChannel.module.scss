@@ -1,0 +1,52 @@
+.backChannel {
+  position: absolute;
+  top: 26px;
+  left: 8px;
+}
+.channel_main {
+  @media (max-width: 767px) {
+    padding: 0 !important;
+  }
+}
+.channel_messages_loader {
+  height: calc(100vh - 60px);
+}
+.channel_messages {
+  // margin: 18px 0 0;
+  @media (max-width: 767px) {
+    margin: 0px 0 0;
+  }
+  position: relative;
+  .file_uploading {
+    width: 100%;
+    position: absolute;
+    top: 90px;
+    z-index: 10;
+    text-align: center;
+    border: 1px solid blue;
+    border-radius: 8px;
+    padding: 2px 24px;
+    margin: 0 auto;
+    color: red;
+    font-weight: 400;
+  }
+  .uploading_file_badge {
+    border-radius: 42px;
+    background-color: var(--background-grey);
+    width: 175px;
+    height: 34px;
+    font-size: 14px;
+    padding: 7px 0;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    z-index: 2;
+    box-shadow: 2px 1px 10px rgb(0 0 0 / 40%);
+  }
+}
+
+.message_list_wrapper {
+  // max-height: calc(100vh - 236px);
+  // overflow: hidden;
+  // overflow-y: auto;
+}

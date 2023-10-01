@@ -1,0 +1,174 @@
+.main_container {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  background: #fff;
+  width: 100%;
+  border-radius: 6px;
+  min-height: calc(100vh - 130px);
+
+  @media (max-width: 767px) {
+    min-height: unset;
+    display: block;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .user_listing_cont {
+    flex: 0 0 30%;
+    border-right: 1px solid #d8d8d8;
+
+    @media (max-width: 767px) {
+      min-height: unset;
+      flex: 0 0 100%;
+    }
+
+    .user_list_header {
+      padding: 1rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+      border-bottom: 1px solid #d8d8d8;
+
+      button {
+        font-size: 1rem;
+        border: 0;
+        padding: 0;
+        outline: none;
+        background: transparent;
+      }
+
+      h2 {
+        font-size: 1.125rem;
+        font-weight: 500;
+        color: #242429;
+        margin: 0;
+
+        span {
+          font-size: 1rem;
+          font-weight: 400;
+          display: block;
+          margin-top: 3px;
+        }
+      }
+
+      > span {
+        font-size: 1.125rem;
+        font-weight: 400;
+        color: #242429;
+      }
+    }
+
+    .tab_wrapper {
+      h3 {
+        font-size: 1.25rem;
+        font-weight: 500;
+        color: #242429;
+        padding: 1rem;
+        margin: 0;
+
+        @media (max-width: 1440px) {
+          font-size: 1.125rem;
+        }
+      }
+
+      .tab_list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0 1rem;
+        border-bottom: 1px solid #d8d8d8;
+
+        button {
+          width: fit-content;
+          border: 0;
+          font-size: 1.125rem;
+          font-weight: 400;
+          outline: none;
+          background: transparent;
+          color: #5e5e5e;
+          opacity: 0.8;
+          padding-bottom: px;
+          border-bottom: 2px solid transparent;
+          transition: 0.3s ease-in-out;
+
+          @media (max-width: 1440px) {
+            font-size: 1rem;
+          }
+          @media (max-width: 767px) {
+            font-size: 0.875rem;
+          }
+
+          &:hover {
+            color: #242429;
+            border-color: #242429;
+          }
+
+          &:disabled {
+            color: #242429;
+            font-weight: 500;
+            border-color: #242429;
+          }
+        }
+      }
+    }
+
+    .btn_wrapper {
+      padding: 1rem;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      button {
+        &:disabled {
+          background: #f0f0f0;
+          color: #a4a4a4;
+        }
+      }
+    }
+  }
+
+  .user_view_cont {
+    flex: 0 0 70%;
+
+    @media (max-width: 767px) {
+      flex: 0 0 100%;
+      position: absolute;
+      background: #fff;
+      z-index: 1;
+      left: 0rem;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      transition: 0.3s ease-in-out;
+      transform: translateX(100%);
+    }
+
+    &.show {
+      @media (max-width: 767px) {
+        transform: translateX(0%);
+      }
+    }
+  }
+}
+
+// empty_state_no_candidate
+.empty_state_no_candidate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  max-height: calc(100vh - 130px);
+
+  h3 {
+    color: #5e5e5e;
+    font-size: 1.375rem;
+
+    @media (max-width: 1440px) {
+      font-size: 1.125rem !important;
+    }
+  }
+}

@@ -1,0 +1,67 @@
+.newJobPostCard {
+  font-family: "Roboto", sans-serif;
+  background: var(--white);
+  border-radius: 10px;
+  padding: 1.5rem;
+  position: sticky;
+  top: 5rem;
+  transition: 0.3s ease-in-out;
+  height: calc(100vh - 195px);
+  overflow-y: auto;
+
+  @media (max-width: 767.98px) {
+    height: auto;
+  }
+
+  .heading_wrap {
+    gap: 10px;
+    display: flex;
+    align-items: flex-start;
+
+    h3 {
+      font-size: 1.375rem;
+      font-weight: 500;
+      color: var(--black);
+      margin: 0;
+
+      span {
+        display: block;
+        font-size: 1rem;
+        font-weight: 400;
+        color: #878787;
+      }
+    }
+  }
+
+  .card_top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-bottom: 1.25rem;
+    border-bottom: 1px solid #e5e5e5;
+
+    button {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+
+  .card_body {
+    padding-top: 1.25rem;
+
+    .card_wrapper {
+      display: flex;
+      gap: 1.5rem 1rem;
+      flex-wrap: wrap;
+      width: 100%;
+      position: relative;
+
+      @media (max-width: 767.98px) {
+        gap: 1.5rem 1rem;
+      }
+    }
+  }
+}

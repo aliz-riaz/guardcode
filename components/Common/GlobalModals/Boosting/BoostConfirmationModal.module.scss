@@ -1,0 +1,112 @@
+.modal_wrap {
+  padding: 1.5rem;
+  background: #fff;
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  .img_wrap {
+    margin: -6.175rem -4rem 1rem 0;
+  }
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 6px;
+  }
+  p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #242429;
+    margin-bottom: 0.5rem;
+  }
+  .button_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    button {
+      background: #47d6b5;
+      border-radius: 5px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      font-size: 1rem;
+      font-weight: 700;
+      color: #242429;
+      outline: none;
+      margin-top: 10px;
+      padding: 0.75rem 1rem;
+      flex-shrink: 0;
+      flex: 1;
+      height: 50px;
+      border: 1px solid #47d6b5;
+      transition: 0.3s ease-in-out;
+      &:hover {
+        background: darken($color: #47d6b5, $amount: 10);
+      }
+      &.cancel_btn {
+        border: 1px solid #5e5e5e;
+        border-radius: 5px;
+        flex: 0.5;
+        background: transparent;
+        color: #5e5e5e;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+.checking_boost_modal {
+  padding: 1.75rem;
+  background: #fff;
+  border-radius: 10px;
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  .lottie_wrap {
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  h2 {
+    margin-top: 1rem;
+    font-size: 1.375rem;
+    font-weight: 700;
+  }
+}
+
+.not_available_modal {
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 10px;
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  h2 {
+    font-size: 1.375rem;
+    font-weight: 700;
+    margin: 1rem 0;
+  }
+  p {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    color: #242429;
+  }
+  button {
+    border: 1px solid #5e5e5e;
+    font-size: 1.125rem;
+    border-radius: 5px;
+    font-weight: 400;
+    width: 100%;
+    color: #5e5e5e;
+    padding: 0.35em;
+    background: transparent;
+  }
+}

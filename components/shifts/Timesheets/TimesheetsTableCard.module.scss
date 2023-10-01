@@ -1,0 +1,71 @@
+.badge {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  border-radius: 46px;
+  padding: 6px 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  line-height: 1;
+  width: fit-content;
+
+  img {
+    width: 12px;
+    height: 12px;
+  }
+
+  &.dispute {
+    background: #FF5E531A;
+    color: #FF5E53;
+    font-weight: 500;
+  }
+
+  &.paid {
+    color: #66B440;
+    background: #66B4401F;
+    font-weight: 500;
+  }
+
+  &.approved {
+    color: #3BD55A;
+    background: #3BD55A1A;
+    font-weight: 500;
+  }
+}
+
+
+.dropdownBtn {
+  button {
+    box-shadow: none !important;
+  }
+
+  .dropdown_menu {
+    border: 0;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.16);
+
+    ul {
+      li {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 1rem;
+        padding: 0.5em 1em;
+        color: #242429;
+        transition: 0.3s ease-in-out;
+
+        &[disabled="true"] {
+          pointer-events: auto;
+          opacity: 0;
+        }
+
+        &:hover {
+          background: #f9f9f9;
+        }
+      }
+    }
+  }
+}

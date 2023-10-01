@@ -1,0 +1,125 @@
+.inviteMemberForm {
+  label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+
+    // span {
+    //     color: #A4A4A4;
+    // }
+  }
+
+  .input_field {
+    input {
+      border: 1px solid #cfcfcf;
+      border-radius: 5px;
+
+      &::placeholder {
+        color: #a4a4a4;
+      }
+    }
+  }
+
+  .button {
+    border: 0;
+
+    &:disabled {
+      background: #e6e6e6;
+      color: #535353;
+    }
+  }
+
+  .gl_checkbox {
+    input {
+      &:checked {
+        ~ {
+          .checkmark {
+            background: var(--action-green);
+            border-color: var(--action-green);
+          }
+        }
+      }
+    }
+
+    .checkmark {
+      border-color: #bfbfbf;
+
+      &::after {
+        border-color: var(--black);
+      }
+    }
+  }
+}
+
+.inviteModalTable {
+  padding: 1rem 0;
+
+  tr {
+    th {
+      font-size: 12px;
+      border-top: 1px solid #e5e5e5;
+      border-bottom: 1px solid #e5e5e5;
+      color: #242429;
+      font-weight: 600;
+      background: #f9f9f9;
+      padding: 16px 10px;
+      text-align: center;
+
+      &:nth-child(1) {
+        text-align: left;
+      }
+    }
+
+    td {
+      font-size: 12px;
+      color: #535353;
+      padding: 15px 10px;
+      text-align: center;
+
+      &:nth-child(1) {
+        text-align: left;
+      }
+
+      button {
+        background: transparent;
+        border: 0;
+        outline: 0;
+      }
+
+      span {
+        font-size: 14px;
+        font-weight: 500;
+        display: inline-block;
+
+        &.limited_badge {
+          color: #ef8a17;
+        }
+
+        &.full_badge {
+          color: #01a7ff;
+        }
+      }
+    }
+  }
+}
+
+.successModal {
+  padding: 2rem;
+  text-align: center;
+
+  .lottieWrap {
+    max-width: 160px;
+    margin: 0 auto;
+  }
+}
+
+.inviteTeamModal {
+  .closeBtn {
+    background: transparent;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    outline: none;
+  }
+}

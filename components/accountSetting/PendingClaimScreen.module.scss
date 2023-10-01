@@ -1,0 +1,12 @@
+.pending_alert {
+  background-color: #fda228;
+  margin: 0 0 -25px 0;
+  position: relative;
+  z-index: 1;
+  &.rejected {
+    background-color: #cc2b2b;
+  }
+  > span {
+    margin-top: 3px;
+  }
+}

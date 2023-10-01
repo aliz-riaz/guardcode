@@ -1,0 +1,33 @@
+.deleteTeamModal {
+  .closeBtn {
+    background: transparent;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    outline: none;
+  }
+
+  .deleteModalBody {
+    p {
+      font-size: 1.125rem;
+      font-weight: 400;
+      color: #535353;
+    }
+  }
+
+  .modalFooter {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+
+    button {
+      font-size: 1rem;
+      font-weight: 400;
+
+      &.danger {
+        background: #d34127;
+      }
+    }
+  }
+}

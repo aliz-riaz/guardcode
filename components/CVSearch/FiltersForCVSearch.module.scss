@@ -1,0 +1,24 @@
+.multislelect_dropdown {
+  div:first-child {
+    border: solid 1px var(--brownish-grey);
+    min-height: 46px;
+    padding: 7px;
+  }
+}
+
+.video_container {
+  transform: translate(0px, 8px);
+}
+.filter_btn {
+  > button {
+    padding: 6px 12px !important;
+  }
+}
+.cancel_text {
+  position: absolute;
+  top: 11px;
+  right: 15px;
+}
+.location_search_input {
+  padding-right: 50px !important;
+}

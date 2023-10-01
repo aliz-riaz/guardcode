@@ -1,0 +1,37 @@
+.next_and_previous {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 10px;
+
+  button {
+    background: transparent;
+    padding: 0;
+    border: 0;
+    font-size: 1rem;
+    font-weight: normal;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+    outline: none;
+
+    &:disabled {
+      img {
+        opacity: 0.2;
+      }
+    }
+
+    &:first-child {
+      img {
+        transform: rotate(90deg);
+      }
+    }
+    &:last-child {
+      img {
+        transform: rotate(90deg);
+      }
+    }
+  }
+}

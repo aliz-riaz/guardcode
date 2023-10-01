@@ -1,0 +1,29 @@
+.alert_wrap {
+  background: rgba(255, 94, 83, 0.1);
+  border-radius: 4px;
+  min-height: 60px;
+  padding: 0.25rem 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media (max-width: 991px) {
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding-bottom: 0.5rem;
+  }
+  p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    // font-size: clamp(14px, 1.5vw, 1rem);
+    margin: 0;
+    color: #ff5e53;
+    font-weight: 500;
+    max-width: 75%;
+    @media (max-width: 991px) {
+      max-width: 100%;
+    }
+  }
+}
