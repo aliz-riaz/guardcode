@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="42" height="46" viewBox="0 0 42 46">
+  <g id="office" transform="translate(-3 -1)">
+    <g id="Group_11151" data-name="Group 11151">
+      <path id="Path_11744" data-name="Path 11744" d="M24,7a1,1,0,0,1-1-1V2a1,1,0,0,1,2,0V6A1,1,0,0,1,24,7Z" fill="#444"/>
+      <path id="Path_11745" data-name="Path 11745" d="M32,11H29V6a1,1,0,0,0-1-1H20a1,1,0,0,0-1,1v5H16a1,1,0,0,0-1,1V46a1,1,0,0,0,1,1H32a1,1,0,0,0,1-1V12A1,1,0,0,0,32,11Z" fill="#e6e6e6"/>
+      <path id="Path_11746" data-name="Path 11746" d="M20,27H4a1,1,0,0,0-1,1V46a1,1,0,0,0,1,1H20a1,1,0,0,0,1-1V28A1,1,0,0,0,20,27Z" fill="#b3b3b3"/>
+      <path id="Path_11747" data-name="Path 11747" d="M44,21H28a1,1,0,0,0-1,1V46a1,1,0,0,0,1,1H44a1,1,0,0,0,1-1V22A1,1,0,0,0,44,21Z" fill="#444"/>
+      <path id="Path_11748" data-name="Path 11748" d="M37,40H35a1,1,0,0,0-1,1v6h4V41A1,1,0,0,0,37,40Z" fill="#b3b3b3"/>
+      <path id="Path_11749" data-name="Path 11749" d="M13,41H11a1,1,0,0,0-1,1v5h4V42A1,1,0,0,0,13,41Z" fill="#e6e6e6"/>
+      <path id="Path_11750" data-name="Path 11750" d="M34,29H32a1,1,0,0,1-1-1V26a1,1,0,0,1,1-1h2a1,1,0,0,1,1,1v2A1,1,0,0,1,34,29Z" fill="#badefc"/>
+      <path id="Path_11751" data-name="Path 11751" d="M40,29H38a1,1,0,0,1-1-1V26a1,1,0,0,1,1-1h2a1,1,0,0,1,1,1v2A1,1,0,0,1,40,29Z" fill="#badefc"/>
+      <path id="Path_11752" data-name="Path 11752" d="M34,35H32a1,1,0,0,1-1-1V32a1,1,0,0,1,1-1h2a1,1,0,0,1,1,1v2A1,1,0,0,1,34,35Z" fill="#badefc"/>
+      <path id="Path_11753" data-name="Path 11753" d="M40,35H38a1,1,0,0,1-1-1V32a1,1,0,0,1,1-1h2a1,1,0,0,1,1,1v2A1,1,0,0,1,40,35Z" fill="#badefc"/>
+      <path id="Path_11754" data-name="Path 11754" d="M10,36H8a1,1,0,0,1-1-1V33a1,1,0,0,1,1-1h2a1,1,0,0,1,1,1v2A1,1,0,0,1,10,36Z" fill="#fff"/>
+      <path id="Path_11755" data-name="Path 11755" d="M16,36H14a1,1,0,0,1-1-1V33a1,1,0,0,1,1-1h2a1,1,0,0,1,1,1v2A1,1,0,0,1,16,36Z" fill="#fff"/>
+    </g>
+  </g>
+</svg>

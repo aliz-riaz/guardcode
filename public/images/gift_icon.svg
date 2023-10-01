@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="35.499" height="35.499" viewBox="0 0 35.499 35.499">
+  <g id="present" transform="translate(-1 -1)">
+    <g id="Group_11251" data-name="Group 11251" transform="translate(1 1)">
+      <path id="Path_11585" data-name="Path 11585" d="M27.206,1c-3.344,0-5.239,2.778-6.174,4.769C20.1,3.778,18.2,1,14.859,1a3.859,3.859,0,0,0,0,7.717H27.206a3.859,3.859,0,1,0,0-7.717ZM14.859,7.174a2.315,2.315,0,1,1,0-4.63c2.89,0,4.465,3.028,5.093,4.63Zm12.347,0h-5.1c.627-1.6,2.2-4.63,5.1-4.63a2.315,2.315,0,1,1,0,4.63Z" transform="translate(-3.283 -1)" fill="#f7bf26"/>
+      <path id="Path_11586" data-name="Path 11586" d="M34.325,15H5V37.38a2.315,2.315,0,0,0,2.315,2.315H32.01a2.315,2.315,0,0,0,2.315-2.315Z" transform="translate(-1.913 -4.196)" fill="#f74b3b"/>
+      <path id="Path_11587" data-name="Path 11587" d="M34.955,9H2.543A1.543,1.543,0,0,0,1,10.543v4.63a1.543,1.543,0,0,0,1.543,1.543H34.955A1.543,1.543,0,0,0,36.5,15.174v-4.63A1.543,1.543,0,0,0,34.955,9Z" transform="translate(-1 -2.826)" fill="#ff7163"/>
+      <rect id="Rectangle_12" data-name="Rectangle 12" width="6.967" height="6.967" transform="translate(13.935 6.967)" fill="#ffd764"/>
+      <rect id="Rectangle_13" data-name="Rectangle 13" width="6.967" height="20.902" transform="translate(13.935 13.935)" fill="#f7bf26"/>
+    </g>
+  </g>
+</svg>

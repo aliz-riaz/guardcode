@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="17px" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>zoom</title>
+    <g id="Chat" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g id="Chat-New" transform="translate(-364.000000, -99.000000)" stroke="#000000" stroke-width="2">
+            <g id="zoom" transform="translate(364.000000, 99.000000)">
+                <circle id="Oval" cx="7" cy="7" r="6"></circle>
+                <line x1="15" y1="15" x2="11.242" y2="11.242" id="Path"></line>
+            </g>
+        </g>
+    </g>
+</svg>

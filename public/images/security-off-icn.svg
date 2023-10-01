@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="57" height="60" viewBox="0 0 57 60">
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g transform="translate(-775.000000, -271.000000) translate(775.545455, 271.000000)">
+                <path stroke="#3BD55A" stroke-linecap="square" stroke-width="2" d="M27.955 40L27.955 45"/>
+                <path stroke="#000" stroke-linecap="square" stroke-width="2" d="M38.455 16.889c0-2.148-4.701-3.889-10.5-3.889-5.8 0-10.5 1.741-10.5 3.889 0 1.138 1.327 2.158 3.429 2.869.868 1.87 3.701 3.242 7.07 3.242 3.37 0 6.203-1.372 7.071-3.242 2.102-.711 3.43-1.731 3.43-2.87z"/>
+                <path stroke="#000" stroke-width="2" d="M25.046 32l-9.358 5.214c-1.377.765-2.233 2.235-2.233 3.832V45h30v-3.954c0-1.597-.857-3.067-2.234-3.832L31.863 32"/>
+                <path stroke="#000" stroke-width="2" d="M36.455 19v2.513c0 6.265-3.806 11.487-8.5 11.487-4.695 0-8.5-5.222-8.5-11.487V19"/>
+                <circle cx="27.955" cy="17.5" r="1.5" fill="#3BD55A" fill-rule="nonzero"/>
+            </g>
+        </g>
+    </g>
+</svg>

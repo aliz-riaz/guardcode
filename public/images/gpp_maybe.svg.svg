@@ -1,0 +1,44 @@
+<svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="29" height="30" fill="#1E1E1E"/>
+<g id="Employer Portal">
+<path d="M-4427 -4004C-4427 -4005.1 -4426.1 -4006 -4425 -4006H18623C18624.1 -4006 18625 -4005.1 18625 -4004V16439C18625 16440.1 18624.1 16441 18623 16441H-4425C-4426.1 16441 -4427 16440.1 -4427 16439V-4004Z" fill="#303030"/>
+<g id="1. Request Shift access design should be on screen without modal. No need for modal " clip-path="url(#clip0_6001_2026)">
+<rect width="1920" height="1080" transform="translate(-1351 -356)" fill="#E5E5E5"/>
+<g id="Group 1000003939">
+<rect id="Rectangle 2" x="-945.43" y="-180" width="1363.86" height="849" rx="15.6018" fill="white"/>
+<g id="Group 1000003374">
+<g id="Rectangle 4958" filter="url(#filter0_d_6001_2026)">
+<rect x="-26.2207" y="-61.6865" width="352.559" height="141.023" rx="15.6018" fill="white"/>
+</g>
+<g id="Group 1000003370">
+<g id="gpp_maybe">
+<mask id="mask0_6001_2026" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="29" height="30">
+<rect id="Bounding box" x="0.0722656" y="0.460449" width="28.6827" height="28.6827" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask0_6001_2026)">
+<path id="gpp_maybe_2" d="M14.4125 19.5817C14.7511 19.5817 15.0349 19.4672 15.264 19.2381C15.4931 19.009 15.6076 18.7252 15.6076 18.3866C15.6076 18.048 15.4931 17.7641 15.264 17.5351C15.0349 17.306 14.7511 17.1915 14.4125 17.1915C14.0739 17.1915 13.79 17.306 13.561 17.5351C13.3319 17.7641 13.2174 18.048 13.2174 18.3866C13.2174 18.7252 13.3319 19.009 13.561 19.2381C13.79 19.4672 14.0739 19.5817 14.4125 19.5817ZM13.2174 14.8012H15.6076V8.82567H13.2174V14.8012ZM14.4125 26.7524C11.6438 26.0552 9.35814 24.4667 7.55551 21.9869C5.75288 19.507 4.85156 16.7533 4.85156 13.7256V6.43544L14.4125 2.8501L23.9734 6.43544V13.7256C23.9734 16.7533 23.0721 19.507 21.2694 21.9869C19.4668 24.4667 17.1812 26.0552 14.4125 26.7524Z" fill="#51B37F"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<path d="M-4425 -4005H18623V-4007H-4425V-4005ZM18624 -4004V16439H18626V-4004H18624ZM18623 16440H-4425V16442H18623V16440ZM-4426 16439V-4004H-4428V16439H-4426ZM-4425 16440C-4425.55 16440 -4426 16439.6 -4426 16439H-4428C-4428 16440.7 -4426.66 16442 -4425 16442V16440ZM18624 16439C18624 16439.6 18623.6 16440 18623 16440V16442C18624.7 16442 18626 16440.7 18626 16439H18624ZM18623 -4005C18623.6 -4005 18624 -4004.55 18624 -4004H18626C18626 -4005.66 18624.7 -4007 18623 -4007V-4005ZM-4425 -4007C-4426.66 -4007 -4428 -4005.66 -4428 -4004H-4426C-4426 -4004.55 -4425.55 -4005 -4425 -4005V-4007Z" fill="white" fill-opacity="0.1"/>
+</g>
+<defs>
+<filter id="filter0_d_6001_2026" x="-42.9523" y="-73.6377" width="386.022" height="174.487" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feMorphology radius="4.78046" operator="dilate" in="SourceAlpha" result="effect1_dropShadow_6001_2026"/>
+<feOffset dy="4.78046"/>
+<feGaussianBlur stdDeviation="5.97557"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_6001_2026"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_6001_2026" result="shape"/>
+</filter>
+<clipPath id="clip0_6001_2026">
+<rect width="1920" height="1080" fill="white" transform="translate(-1351 -356)"/>
+</clipPath>
+</defs>
+</svg>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="16px" viewBox="0 0 13 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Path</title>
+    <g id="Chat" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Chat-profileView" transform="translate(-1127.000000, -412.000000)" fill="#000000" fill-rule="nonzero" stroke="#242429" stroke-width="1.5">
+            <g id="Play-Button" transform="translate(1116.000000, 405.000000)">
+                <g id="Group-9" transform="translate(12.000000, 8.000000)">
+                    <path d="M11,6.99956248 C11,6.71429698 10.85425,6.44653244 10.6085833,6.28289856 L1.44191667,0.157565911 C1.16325,-0.0296942585 0.796583333,-0.050695399 0.493166667,0.0980626795 C0.18975,0.249445901 0,0.547837105 0,0.874229831 L0,13.1257702 C0,13.4521629 0.18975,13.7514291 0.493166667,13.9019373 C0.796583333,14.0506954 1.16233333,14.0296943 1.44191667,13.8424341 L10.6085833,7.71710144 C10.85425,7.5543426 11,7.28657806 11,7.00131257 C11,7.00043752 11,7.00043752 11,6.99956248 C11,7.00043752 11,7.00043752 11,6.99956248 Z" id="Path"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

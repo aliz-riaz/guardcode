@@ -1,0 +1,31 @@
+  <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="21"
+            height="20"
+            viewBox="0 0 21 20"
+          >
+            <defs>
+              <path
+                id="9k2qh4jmza"
+                d="M10 12.321l-4.41-4.41c-.326-.326-.854-.326-1.18 0-.325.325-.325.853 0 1.178l5 5c.326.326.854.326 1.18 0l5-5c.325-.325.325-.853 0-1.178-.326-.326-.854-.326-1.18 0L10 12.32z"
+              />
+            </defs>
+            <g fill="none" fill-rule="evenodd">
+              <g>
+                <g>
+                  <g transform="translate(-986.000000, -18.000000) translate(32.000000, 16.000000) translate(954.375000, 2.000000)">
+                    <mask id="7bh6d3uk6b" fill="#fff">
+                      <use href="#9k2qh4jmza" />
+                    </mask>
+                    <use fill="#5E5E5E" fill-rule="nonzero" href="#9k2qh4jmza" />
+                    <g fill="#5E5E5E" mask="url(#7bh6d3uk6b)">
+                      <path
+                        d="M0 0H20V20H0z"
+                        transform="translate(0.000000, 1.000000)"
+                      />
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="347" height="77" viewBox="0 0 347 77">
+    <defs>
+        <linearGradient id="sk5dcpq6xa" x1="100%" x2="0%" y1="50%" y2="50%">
+            <stop offset="0%" stop-color="#5C9269"/>
+            <stop offset="100%" stop-color="#144E22"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g transform="translate(-142.000000, -3898.000000) translate(142.000000, 3898.000000)">
+            <rect width="347" height="77" fill="url(#sk5dcpq6xa)" rx="4"/>
+            <g stroke="#FFF" stroke-linecap="square" stroke-width="3">
+                <path d="M10 20H26V30H10zM14 20v-6c.007-2.206 1.794-3.993 4-4h0c2.206.007 3.993 1.794 4 4v6" transform="translate(27.000000, 18.000000)"/>
+                <path d="M36 24c0 9.941-8.059 18-18 18S0 33.941 0 24V4l18-4 18 4v20z" transform="translate(27.000000, 18.000000)"/>
+            </g>
+            <text fill="#FFF" font-family="Gilroy-Bold" font-size="22" letter-spacing="-.419">
+                <tspan x="81" y="35">PROTECTED WITH </tspan> <tspan x="81" y="57">TRAINING GUARANTEE</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

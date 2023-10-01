@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1366" height="1937" viewBox="0 0 1366 1937">
+  <defs>
+    <filter id="Rectangle_69" x="197" y="646" width="154" height="154" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_69-2" x="197" y="918" width="154" height="154" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_69-3" x="197" y="1188" width="154" height="154" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-3"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_3" x="242.603" y="1225.949" width="68.179" height="73.643" filterUnits="userSpaceOnUse">
+      <feOffset dx="-0.2" dy="-0.2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.1" result="blur-4"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-Web_1366_1">
+      <rect width="1366" height="1937"/>
+    </clipPath>
+  </defs>
+  <g id="Web_1366_1" data-name="Web 1366 – 1" clip-path="url(#clip-Web_1366_1)">
+    <rect width="1366" height="1937" fill="#fff"/>
+    <line id="Line_23" data-name="Line 23" x2="1227" transform="translate(139 231)" fill="none" stroke="#04c037" stroke-width="5"/>
+    <text id="Security:_SIA_BS7858_-_Screening_report" data-name="Security: SIA BS7858 - Screening report" transform="translate(139 199)" fill="#707070" font-size="35" font-family="Lato-Semibold, Lato" font-weight="600" letter-spacing="0.02em"><tspan x="0" y="0">Security: SIA BS7858 - Screening report</tspan></text>
+    <g id="Group_175" data-name="Group 175">
+      <rect id="Rectangle_70" data-name="Rectangle 70" width="215" height="1937" transform="translate(1149)" fill="#f4f4f4"/>
+      <g id="Group_11661" data-name="Group 11661" transform="translate(810.34 2491.858) rotate(-90)">
+        <path id="Path_10392" data-name="Path 10392" d="M-6853.491,1777.125l-5.529,7.4h-26.125v39.133h39.061V1803.9l7.371-9.623v36.375h-53.84v-53.53Z" transform="translate(7551.999 -1358)"/>
+        <path id="Path_10394" data-name="Path 10394" d="M-6845.112,1796.862l6.6,6.969,21.863-27.3,5.215,4.489-27.078,33.922-12.4-13.024Z" transform="translate(7524.783 -1357.264)" fill="#3bd55a"/>
+        <path id="Path_10395" data-name="Path 10395" d="M26.813,17.852v.86a9.364,9.364,0,0,1-2.962,7.024,10.782,10.782,0,0,1-7.8,2.851,11.365,11.365,0,0,1-8.41-3.329,11.136,11.136,0,0,1-3.313-8.171,11.294,11.294,0,0,1,11.595-11.5,11.135,11.135,0,0,1,5.622,1.465,10.415,10.415,0,0,1,3.966,3.918l-1.5.892a8.463,8.463,0,0,0-3.3-3.377,9.336,9.336,0,0,0-4.794-1.274A9.528,9.528,0,0,0,8.8,10.064a9.658,9.658,0,0,0-2.787,7.024,9.668,9.668,0,0,0,10.034,9.875,9.233,9.233,0,0,0,6.339-2.134,7.842,7.842,0,0,0,2.708-5.383H15.632V17.852Zm5.415,8.792H43.377v1.593H30.54V5.938H43.218V7.531H32.228V16.2H42.422v1.593H32.228ZM60.706,5.938V7.531H53.7V28.236h-1.72V7.531H44.97V5.938ZM9.835,54.146V36.754h-5.1v22.3H17.8V54.146Zm9.684-17.392v22.3h5.1v-22.3ZM38.567,59.5a11.042,11.042,0,0,0,9.556-5.16l-4.4-2.548a5.728,5.728,0,0,1-5.16,2.739c-3.95,0-6.5-2.644-6.5-6.626s2.548-6.626,6.5-6.626a5.764,5.764,0,0,1,5.16,2.739l4.4-2.548a11.121,11.121,0,0,0-9.556-5.16A11.3,11.3,0,0,0,26.972,47.9,11.3,11.3,0,0,0,38.567,59.5ZM55.1,54.146V50.2h7.964V45.355H55.1v-3.7h8.76V36.754H50v22.3H64.019V54.146ZM78.8,36.754v12.1l-8.6-12.1H66.376v22.3h5.1v-12.1l8.6,12.1H83.9v-22.3ZM94.695,59.5c4.842,0,8.282-2.548,8.282-6.849,0-4.714-3.791-5.893-7.167-6.912-3.472-1.051-4.014-1.752-4.014-2.771,0-.892.8-1.688,2.389-1.688a3.907,3.907,0,0,1,3.854,2.58l4.3-2.516a8.649,8.649,0,0,0-8.155-5.033c-3.854,0-7.486,2.485-7.486,6.785,0,4.268,3.249,5.861,6.562,6.785,3.345.924,4.619,1.465,4.619,2.835,0,.86-.605,1.816-3.026,1.816a4.671,4.671,0,0,1-4.683-3.09l-4.4,2.548C87.018,57.268,90.012,59.5,94.695,59.5Zm15.258-5.352V50.2h7.964V45.355h-7.964v-3.7h8.76V36.754H104.856v22.3h14.016V54.146Zm20.2-17.392h-8.919v22.3h8.919A10.8,10.8,0,0,0,140.979,47.9,10.8,10.8,0,0,0,130.149,36.754Zm0,17.392h-3.823V41.66h3.823c3.5,0,5.925,2.421,5.925,6.243S133.652,54.146,130.149,54.146Z" transform="translate(721.904 413.697)"/>
+      </g>
+    </g>
+    <text id="Harry_Osborn" data-name="Harry Osborn" transform="translate(139 391.5)" fill="#707070" font-size="100" font-family="Lato-Heavy, Lato" font-weight="800" letter-spacing="0.02em"><tspan x="0" y="0">Harry Osborn</tspan></text>
+    <text id="BS7858_Report" data-name="BS7858 Report" transform="translate(139 494.5)" fill="#707070" font-size="85" font-family="Lato-Semibold, Lato" font-weight="600" letter-spacing="-0.02em"><tspan x="0" y="0">BS7858 Report</tspan></text>
+    <g id="Group_167" data-name="Group 167" transform="translate(139 618)">
+      <rect id="Rectangle_66" data-name="Rectangle 66" width="921" height="203" rx="10" fill="#f8f8f8"/>
+      <g id="Group_205" data-name="Group 205" transform="translate(67.304 33.652)">
+        <g transform="matrix(1, 0, 0, 1, -206.3, -651.65)" filter="url(#Rectangle_69)">
+          <g id="Rectangle_69-4" data-name="Rectangle 69" transform="translate(206 652)" fill="#f4f4f4" stroke="#fff" stroke-width="1">
+            <rect width="136" height="136" rx="10" stroke="none"/>
+            <rect x="0.5" y="0.5" width="135" height="135" rx="9.5" fill="none"/>
+          </g>
+        </g>
+        <text id="_" data-name="" transform="translate(98.462 96.323)" fill="orange" stroke="orange" stroke-width="0.5" font-size="64" font-family="Linearicons" letter-spacing="0.02em"><tspan x="-64" y="0"></tspan></text>
+      </g>
+      <text id="_3_check_unable_to_complete" data-name="3 check unable to complete" transform="translate(238.44 118.152)" fill="#707070" font-size="40" font-family="Lato-Semibold, Lato" font-weight="600" letter-spacing="0.02em"><tspan x="0" y="0">3 check unable to complete</tspan></text>
+    </g>
+    <g id="Group_168" data-name="Group 168" transform="translate(139 889.911)">
+      <rect id="Rectangle_66-2" data-name="Rectangle 66" width="921" height="203" rx="10" transform="translate(0 0.089)" fill="#f8f8f8"/>
+      <g id="Group_195" data-name="Group 195" transform="translate(67.304 33.652)">
+        <g transform="matrix(1, 0, 0, 1, -206.3, -923.56)" filter="url(#Rectangle_69-2)">
+          <g id="Rectangle_69-5" data-name="Rectangle 69" transform="translate(206 924)" fill="#f4f4f4" stroke="#fff" stroke-width="1">
+            <rect width="136" height="136" rx="10" stroke="none"/>
+            <rect x="0.5" y="0.5" width="135" height="135" rx="9.5" fill="none"/>
+          </g>
+        </g>
+        <text id="_2" data-name="" transform="translate(98.462 95.789)" fill="red" stroke="red" stroke-width="0.5" font-size="64" font-family="Linearicons" letter-spacing="0.02em"><tspan x="-64" y="0"></tspan></text>
+      </g>
+      <text id="_1_check_failed" data-name="1 check failed" transform="translate(238.44 117.618)" fill="#707070" font-size="40" font-family="Lato-Semibold, Lato" font-weight="600" letter-spacing="0.02em"><tspan x="0" y="0">1 check failed</tspan></text>
+    </g>
+    <g id="Group_169" data-name="Group 169" transform="translate(139 1160.475)">
+      <rect id="Rectangle_66-3" data-name="Rectangle 66" width="921" height="204" rx="10" transform="translate(0 -0.476)" fill="#f8f8f8"/>
+      <g transform="matrix(1, 0, 0, 1, -139, -1160.48)" filter="url(#Rectangle_69-3)">
+        <g id="Rectangle_69-6" data-name="Rectangle 69" transform="translate(206 1194)" fill="#f4f4f4" stroke="#fff" stroke-width="1">
+          <rect width="136" height="136" rx="10" stroke="none"/>
+          <rect x="0.5" y="0.5" width="135" height="135" rx="9.5" fill="none"/>
+        </g>
+      </g>
+      <text id="_7_Checks_completed" data-name="7 Checks completed" transform="translate(238.44 118.431)" fill="#707070" font-size="40" font-family="Lato-Semibold, Lato" font-weight="600" letter-spacing="0.02em"><tspan x="0" y="0">7 Checks completed</tspan></text>
+      <g id="Group_170" data-name="Group 170" transform="translate(99.836 65.973)">
+        <rect id="Rectangle_2" data-name="Rectangle 2" width="19.727" height="27.125" rx="9.864" transform="matrix(-0.766, 0.643, -0.643, -0.766, 32.547, 53.062)" fill="#03ac31"/>
+        <g transform="matrix(1, 0, 0, 1, -238.84, -1226.45)" filter="url(#Path_3)">
+          <path id="Path_3-2" data-name="Path 3" d="M19.239,0a8.5,8.5,0,0,1,8.5,8.5v54.9a8.783,8.783,0,0,1-8.661,8.668C18.464,72.074,0,68.753,0,68.753s9.15-.135,10.324-8.663S10.738,8.5,10.738,8.5A8.5,8.5,0,0,1,19.239,0Z" transform="matrix(0.77, 0.64, -0.64, 0.77, 289.43, 1226.45)" fill="#04c037"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

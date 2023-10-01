@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="15px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>expand</title>
+    <g id="Chat" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g id="Global-chat" transform="translate(-992.000000, -639.000000)" stroke="#000000" stroke-width="1.5">
+            <g id="Rectangle" transform="translate(725.000000, 619.000000)">
+                <g id="expand" transform="translate(268.000000, 21.000000)">
+                    <line x1="12.5" y1="0.5" x2="8" y2="5" id="Path"></line>
+                    <line x1="5" y1="8" x2="0.5" y2="12.5" id="Path"></line>
+                    <polyline id="Path" points="7 0 13 0 13 6"></polyline>
+                    <polyline id="Path" points="0 7 0 13 6 13"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

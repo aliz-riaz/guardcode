@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="307" height="71" viewBox="0 0 307 71">
+    <defs>
+        <style>
+            .cls-7{fill:#fff}.cls-3{fill:#444}.cls-4{fill:#e6e6e6}.cls-5{fill:#b3b3b3}.cls-6{fill:#badefc}
+        </style>
+    </defs>
+    <g id="Group_11155" data-name="Group 11155" transform="translate(-447 -2929)">
+        <text id="_1000_security_companies" data-name="1000+ security companies" transform="translate(499 2929)" style="font-size:35px;font-family:Gilroy-Bold;font-weight:700;letter-spacing:-.025em;fill:#fff"><tspan x="0" y="27">1000+</tspan><tspan style="font-size:24px"><tspan x="0" y="57">security companies</tspan></tspan></text>
+        <g id="office" transform="translate(444 2941)">
+            <g id="Group_11151" data-name="Group 11151">
+                <path id="Path_11744" data-name="Path 11744" class="cls-3" d="M24 7a1 1 0 0 1-1-1V2a1 1 0 0 1 2 0v4a1 1 0 0 1-1 1z"/>
+                <path id="Path_11745" data-name="Path 11745" class="cls-4" d="M32 11h-3V6a1 1 0 0 0-1-1h-8a1 1 0 0 0-1 1v5h-3a1 1 0 0 0-1 1v34a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V12a1 1 0 0 0-1-1z"/>
+                <path id="Path_11746" data-name="Path 11746" class="cls-5" d="M20 27H4a1 1 0 0 0-1 1v18a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V28a1 1 0 0 0-1-1z"/>
+                <path id="Path_11747" data-name="Path 11747" class="cls-3" d="M44 21H28a1 1 0 0 0-1 1v24a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V22a1 1 0 0 0-1-1z"/>
+                <path id="Path_11748" data-name="Path 11748" class="cls-5" d="M37 40h-2a1 1 0 0 0-1 1v6h4v-6a1 1 0 0 0-1-1z"/>
+                <path id="Path_11749" data-name="Path 11749" class="cls-4" d="M13 41h-2a1 1 0 0 0-1 1v5h4v-5a1 1 0 0 0-1-1z"/>
+                <path id="Path_11750" data-name="Path 11750" class="cls-6" d="M34 29h-2a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1z"/>
+                <path id="Path_11751" data-name="Path 11751" class="cls-6" d="M40 29h-2a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1z"/>
+                <path id="Path_11752" data-name="Path 11752" class="cls-6" d="M34 35h-2a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1z"/>
+                <path id="Path_11753" data-name="Path 11753" class="cls-6" d="M40 35h-2a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1z"/>
+                <path id="Path_11754" data-name="Path 11754" class="cls-7" d="M10 36H8a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1z"/>
+                <path id="Path_11755" data-name="Path 11755" class="cls-7" d="M16 36h-2a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1z"/>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="13px" viewBox="0 0 13 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>pen</title>
+    <g id="Chat" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Staffing-Applicants-details-CHAT-exp-conv-Copy-2" transform="translate(-1110.000000, -846.000000)" stroke="#FFFFFF">
+            <g id="Group-7" transform="translate(1092.000000, 824.000000)">
+                <g id="pen" transform="translate(18.000000, 22.000000)">
+                    <line x1="8.5" y1="2.50042677" x2="10.5" y2="4.50042677" id="Path"></line>
+                    <path d="M4.5,10.5004268 L11.58,3.45042677 C12.140569,2.88985774 12.140569,1.98099579 11.58,1.42042677 C11.019431,0.859857745 10.110569,0.859857745 9.55,1.42042677 L2.5,8.50042677 L1,12.0004268 L4.5,10.5004268 Z" id="Path"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
