@@ -13,10 +13,10 @@ const VideoPlayer = (props) => {
   const [swiper, setSwiper] = useState(null);
   const videoRefs = useRef([]);
 
-  useEffect(async () => {
-    const videosData = await props.employerVideos();
-    setEmployerVideo(videosData);
-  }, []);
+  // useEffect(async () => {
+  //   const videosData = await props.employerVideos();
+  //   setEmployerVideo(videosData);
+  // }, []);
 
   const handleVideoClick = (index) => {
     // Pause the previously playing video, if any
